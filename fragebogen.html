@@ -41,6 +41,26 @@
         a {
             color: blue;
         }
+
+        #diagramme {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p {
+            width: 35vw;
+        }
+
+        @media print {
+
+            @page {
+                size: A4 portrait;
+            }
+
+            body {
+                font-size: 9px;
+            }
+        }
     </style>
 </head>
 <body>
