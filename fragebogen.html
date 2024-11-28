@@ -50,53 +50,66 @@
         <label for="farbe">Welche Farbe hat es?</label><br>
         <input type="text" id="farbe" name="farbe">
 
-        <legend>Welche Form?</legend>
-        <label for="eckig">eckig</label>
-        <input type="checkbox" id="eckig" name="eckig">
-        <label for="rund">rund</label>
-        <input type="checkbox" id="rund" name="rund">
-        <label for="zackig">zackig</label>
-        <input type="checkbox" id="zackig" name="zackig">
+        <div class="checkContainer">
+            <legend>Welche Form?</legend>
+            <label for="eckig">eckig</label>
+            <input type="checkbox" id="eckig" name="eckig">
+            <label for="rund">rund</label>
+            <input type="checkbox" id="rund" name="rund">
+            <label for="zackig">zackig</label>
+            <input type="checkbox" id="zackig" name="zackig">
+            <input type="text"><input type="checkbox" name="andere" value="andere">
 
-        <a href="https://polinsski.digitale-grafik.com/poetic-web/unfolding-spiral.html">poetic-web/unfolding-spiral.html</a>, <a href="https://web.archive.org/web/20170623061813/http://psfa-bxl.org/">http://psfa-bxl.org (archived)</a>
+            <a href="https://polinsski.digitale-grafik.com/poetic-web/unfolding-spiral.html">poetic-web/unfolding-spiral.html</a>, <a href="https://web.archive.org/web/20170623061813/http://psfa-bxl.org/">http://psfa-bxl.org (archived)</a>
+        </div>
 
-        <legend>Und welche Konsistenz?</legend>
-        <label for="flüssig">flüssig</label>
-        <input type="checkbox" id="flüssig" name="flüssig">
-        <label for="weich">weich</label>
-        <input type="checkbox" id="weich" name="weich">
-        <label for="porös">porös</label>
-        <input type="checkbox" id="porös" name="porös">
-        <label for="dicht">dicht</label>
-        <input type="checkbox" id="dicht" name="dicht">
-        <a href="https://web.archive.org/web/20240108222752/http://lynnecarty.info/">lynnecarty.info</a>, <a href="https://web.archive.org/web/20230809192528/https://the-life-and-death-of-an-internet-onion.com/">the-life-and-death-of-an-internet-onion.com (archived)</a>
+        <div class="checkContainer">
+            <legend>Und welche Konsistenz?</legend>
+            <label for="flüssig">flüssig</label>
+            <input type="checkbox" id="flüssig" name="flüssig">
+            <label for="weich">weich</label>
+            <input type="checkbox" id="weich" name="weich">
+            <label for="porös">porös</label>
+            <input type="checkbox" id="porös" name="porös">
+            <label for="dicht">dicht</label>
+            <input type="checkbox" id="dicht" name="dicht">
 
-        <legend>Ist es eher...</legend>
-        <label for="chaos">... chaotisch?</label>
-        <input type="checkbox" name="chaos" id="chaos">
+            <input type="text"><input type="checkbox" name="andere" value="andere">
+            <a href="https://web.archive.org/web/20240108222752/http://lynnecarty.info/">lynnecarty.info</a>, <a href="https://web.archive.org/web/20230809192528/https://the-life-and-death-of-an-internet-onion.com/">the-life-and-death-of-an-internet-onion.com (archived)</a>
+        </div>
 
-        <label for="struktur">... strukturiert?</label>
-        <input type="checkbox" name="struktur" id="struktur">
-        <a href="https://digitallovelanguages.github.io/">digitallovelanguages.github.io</a>, <a href="https://gardenblues.net/">gardenblues.net</a>
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="chaos">... chaotisch?</label>
+            <input type="checkbox" name="chaos" id="chaos">
 
-        <legend>Ist es eher...</legend>
-        <label for="offen">... offen?</label>
-        <input type="checkbox" name="offen" id="offen">
+            <label for="struktur">... strukturiert?</label>
+            <input type="checkbox" name="struktur" id="struktur">
+            <a href="https://digitallovelanguages.github.io/">digitallovelanguages.github.io</a>, <a href="https://gardenblues.net/">gardenblues.net</a>
+        </div>
 
-        <label for="zu">... verschlossen?</label>
-        <input type="checkbox" name="zu" id="zu">
-        <a href="https://virtual.windchime.world/">virtual.windchime.world</a>
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="offen">... offen?</label>
+            <input type="checkbox" name="offen" id="offen">
 
-        <legend>Ist es eher...</legend>
-        <label for="linear">... linear?</label>
-        <input type="checkbox" name="linear" id="linear">
-        <a href="https://page-not-found.nl/">page-not-found.nl</a>, <a href="https://diagram.website/">diagram.website/</a>
+            <label for="zu">... verschlossen?</label>
+            <input type="checkbox" name="zu" id="zu">
+            <a href="https://virtual.windchime.world/">virtual.windchime.world</a>
+        </div>
 
-        <label for="verworren">... verworren?</label>
-        <input type="checkbox" name="verworren" id="verworren">
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="linear">... linear?</label>
+            <input type="checkbox" name="linear" id="linear">
 
-        <label for="schachtelt">... verschachtelt?</label>
-        <input type="checkbox" name="schachtelt" id="schachtelt">
+            <label for="verworren">... verworren?</label>
+            <input type="checkbox" name="verworren" id="verworren">
+
+            <label for="schachtelt">... verschachtelt?</label>
+            <input type="checkbox" name="schachtelt" id="schachtelt">
+            <a href="https://page-not-found.nl/">page-not-found.nl</a>, <a href="https://diagram.website/">diagram.website/</a>
+        </div>
       
         <input type="submit" value="print" onclick="window.print();">
     </form>
