@@ -26,6 +26,10 @@
     background: rgb(71, 71, 71);
   }
 
+  b {
+    -webkit-text-stroke: 1px;
+  }
+
   h1 {
     font-size: 4rem;
     letter-spacing: -0.2rem;
