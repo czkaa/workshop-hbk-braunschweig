@@ -21,7 +21,11 @@
         }
         .two {
             max-width: 40%;
-        } 
+        }
+        pre {
+            width: fit-content;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +62,24 @@
         <section>
             <h1>basic selectors</h1>
             <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
+<p>alle Elemente (am wenigsten spezifisch)</p>
+<pre>
+* {
+    background-color: white;
+}</pre>
+<pre>
+p {
+    font-weight: bold;
+}</pre>
+<pre>
+.class {
+    text-decoration: underline;
+}</pre>
+<p>Element mit ID (am meisten spezifisch, jede ID nur 1x verwenden)</p>
+<pre>
+#id {
+    color: red;
+}</pre>
         </section>
 
         <section>
