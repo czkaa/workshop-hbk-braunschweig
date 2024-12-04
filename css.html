@@ -12,7 +12,7 @@
         }
         section {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
         }
         img {
             display: block;
@@ -36,11 +36,39 @@
             border: 1px solid black;
             padding: 1vw;
         }
+        nav {
+            position: fixed;
+            left: 2vw;
+            top: 45%;
+        }
+        ul li {
+            list-style-type: disc;
+        }
+        li {
+            padding-inline: 3vw;
+        }
+        li ul li {
+            list-style-type: circle;
+        }
+        li ul {
+            padding-inline: 3vw;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <p>Quicklinks</p>
+            <ul>
+                <li><a href="#wie">Wie?</a></li>
+                <li><a href="#selectors">Selectors</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#values">Units</a></li>
+            </ul>
+        </nav>
+    </header>
     <main style="max-width: 70vw; margin: auto; gap: 1rem; display: flex; flex-direction: column; padding: 1rem">
-        <section>
+        <section id="was">
             <h1>Was ist CSS?</h1>
             <p>HTML: (Struktur, Gerüst)</p>
             <img class="two" src="/assets/img/unmöbeliert.jpg" alt="">
@@ -48,7 +76,7 @@
             <img class="two"  src="/assets/img/möbeliert.webp" alt="">
         </section>
 
-        <section>
+        <section id="eigen">
             <h1>Eigenheiten:</h1>
             <h1><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</h1>
             <p>cascading?</p>
@@ -71,14 +99,14 @@
             </ul>
         </section>
 
-        <section>
+        <section id="wie">
             <h1>Wie schreibe ich CSS?</h1>
             <p>syntax</p>
             <img src="/assets/img/css-01.png" alt="">
             <img src="/assets/img/css-02.png" alt="">
         </section>
 
-        <section>
+        <section id="selectors">
             <h1>Basic selectors</h1>
             <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
             <table>
@@ -167,7 +195,7 @@
 
         </section>
 
-        <section>
+        <section id="properties">
             <h1>Basic properties</h1>
             <table>
                 <tr>
@@ -269,7 +297,7 @@
 
         </section>
 
-        <section>
+        <section id="values">
             <h1>Basic values (units)</h1>
             <p>Die meisten numerischen values brauchen eine unit (Einheit)</p>
             <table>
@@ -313,7 +341,7 @@
             </table>
         </section>
 
-        <section>
+        <section id="csshtml">
             <h1>Und wie verbinde ich das mit HTML?</h1>
             <img src="/assets/img/css-03.png" alt="">
             <img src="/assets/img/css-04.png" alt="">
