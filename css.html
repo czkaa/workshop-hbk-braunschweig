@@ -26,6 +26,15 @@
             width: fit-content;
             background-color: yellow;
         }
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th,
+        td {
+            border: 1px solid black;
+            padding: 1vw;
+        }
     </style>
 </head>
 <body>
@@ -62,24 +71,88 @@
         <section>
             <h1>basic selectors</h1>
             <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
-<p>alle Elemente (am wenigsten spezifisch)</p>
-<pre>
-* {
-    background-color: white;
-}</pre>
-<pre>
-p {
-    font-weight: bold;
-}</pre>
-<pre>
-.class {
-    text-decoration: underline;
-}</pre>
-<p>Element mit ID (am meisten spezifisch, jede ID nur 1x verwenden)</p>
-<pre>
-#id {
-    color: red;
-}</pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Beispiel</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>
+                            * {
+                                background-color: white;
+                            }
+                        </td>
+                        <td>alle Elemente (am wenigsten spezifisch)</td>
+                    </tr>
+                    <tr>
+                        <td>element</td>
+                        <td>p {
+                            font-weight: bold;
+                        }</td>
+                        <td>alle HTML Elemente die ein &lt;p&gt; tag haben</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>.class {
+                            text-decoration: underline;
+                        }</td>
+                        <td>alle HTML Elemente mit der Klasse (class=" ")</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>#id {
+                            color: red;
+                        }</td>
+                        <td>HTML Element mit ID (am meisten spezifisch, jede ID nur 1x verwenden)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Combinators: mehr als ein selector hintereinander</td>
+                    </tr>
+                    <tr>
+                        <td>inner</td>
+                        <td>#id p { }</td>
+                        <td>Wählt alle &lt;p&gt; Elemente die innerhalb von #id sind</td>
+                    </tr>
+                    <tr>
+                        <td>chained</td>
+                        <td>#id, p { }</td>
+                        <td>Wählt das #id element und alle &lt;p&gt; Elemente </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Pseudo Selectors: werden mit : geschrieben, fragen Element status ab</td>
+                    </tr>
+                    <tr>
+                        <td>hover</td>
+                        <td>p:hover { 
+                            color: blue;
+                        }</td>
+                        <td>Hover beschreibt was passiert wenn du deinen cursor über dem Element bewegst. Hier: wenn du über &lt;p&gt; hoverst, ändert sich die Textfarbe zu Blau.</td>
+                    </tr>
+                    <tr>
+                        <td>active</td>
+                        <td>a:active { 
+                            color: yellow;
+                        }</td>
+                        <td>Wenn ein link geklickt wurde</td>
+                    </tr>
+                    <tr>
+                        <td>has</td>
+                        <td>div:has(p) {
+                            background-color: grey;
+                        }
+                        </td>
+                        <td>Wähle alle &lt;div&gt; Elemente in denen ein oder meherere &lt;p&gt; enthalten sind.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
         </section>
 
         <section>
