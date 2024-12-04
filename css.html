@@ -24,7 +24,8 @@
         }
         pre {
             width: fit-content;
-            background-color: yellow;
+            /* background-color: yellow; */
+            margin: 0;
         }
         table {
             border-collapse: collapse;
@@ -35,6 +36,9 @@
         td {
             border: 1px solid black;
             padding: 1vw;
+        }
+        td:has(pre) {
+            background-color: yellow;
         }
         nav {
             position: fixed;
@@ -60,7 +64,7 @@
         <nav>
             <p>Quicklinks</p>
             <ul>
-                <li><a href="#wie">Wie?</a></li>
+                <li><a href="#wie">Syntax</a></li>
                 <li><a href="#selectors">Selectors</a></li>
                 <li><a href="#properties">Properties</a></li>
                 <li><a href="#values">Units</a></li>
@@ -121,31 +125,37 @@
                     <tr>
                         <td>*</td>
                         <td>
-                            * {
-                                background-color: white;
-                            }
+<pre>* {
+    background-color: white;
+}</pre>
                         </td>
                         <td>alle Elemente (am wenigsten spezifisch)</td>
                     </tr>
                     <tr>
                         <td>element</td>
-                        <td>p {
-                            font-weight: bold;
-                        }</td>
+                        <td>
+<pre>p {
+    font-weight: bold;
+}</pre>
+                    </td>
                         <td>alle HTML Elemente die ein &lt;p&gt; tag haben</td>
                     </tr>
                     <tr>
                         <td>.class</td>
-                        <td>.class {
-                            text-decoration: underline;
-                        }</td>
+                        <td>
+<pre>.class {
+    text-decoration: underline;
+}</pre>
+                    </td>
                         <td>alle HTML Elemente mit der Klasse (class=" ")</td>
                     </tr>
                     <tr>
                         <td>#id</td>
-                        <td>#id {
-                            color: red;
-                        }</td>
+                        <td>
+<pre>#id {
+    color: red;
+}</pre>
+                        </td>
                         <td>HTML Element mit ID (am meisten spezifisch, jede ID nur 1x verwenden)</td>
                     </tr>
                     <tr>
@@ -153,12 +163,16 @@
                     </tr>
                     <tr>
                         <td>inner</td>
-                        <td>#id p { }</td>
+                        <td>
+<pre>#id p { }</pre>
+                        </td>
                         <td>Wählt alle &lt;p&gt; Elemente die innerhalb von #id sind</td>
                     </tr>
                     <tr>
                         <td>chained</td>
-                        <td>#id, p { }</td>
+                        <td>
+<pre>#id, p { }</pre>
+                        </td>
                         <td>Wählt das #id element und alle &lt;p&gt; Elemente </td>
                     </tr>
                     <tr>
@@ -166,23 +180,28 @@
                     </tr>
                     <tr>
                         <td>:hover</td>
-                        <td>p:hover { 
-                            color: blue;
-                        }</td>
+                        <td>
+<pre>p:hover { 
+    color: blue;
+}</pre>
+                        </td>
                         <td>Hover beschreibt was passiert wenn du deinen cursor über dem Element bewegst. Hier: wenn du über &lt;p&gt; hoverst, ändert sich die Textfarbe zu Blau.</td>
                     </tr>
                     <tr>
                         <td>:active</td>
-                        <td>a:active { 
-                            color: yellow;
-                        }</td>
+                        <td>
+<pre>a:active { 
+    color: yellow;
+}</pre>
+                    </td>
                         <td>Wenn ein link geklickt wurde</td>
                     </tr>
                     <tr>
                         <td>:has</td>
-                        <td>div:has(p) {
-                            background-color: grey;
-                        }
+                        <td>
+<pre>div:has(p) {
+    background-color: grey;
+}</pre>
                         </td>
                         <td>Wähle alle &lt;div&gt; Elemente in denen ein oder meherere &lt;p&gt; enthalten sind.</td>
                     </tr>
@@ -199,43 +218,64 @@
             <h1>Basic properties</h1>
             <table>
                 <tr>
+                    <th></th>
+                    <th>Property</th>
+                    <th>Beispiele</th>
+                    <th>Beschreibung</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
                     <td rowspan="5">Styles</td>
                     <td>color</td>
-                    <td>color: background-color:</td>
+                    <td>
+<pre>color: blue; 
+background-color: grey;</pre>
+                    </td>
                     <td>CSS kennt 145 Farben beim Namen</td>
                     <td><a href="https://raphaelbastide.com/salmon-olive/">HTML Colors List</a></td>
                 </tr>
                 <tr>
                     <td>fonts</td>
-                    <td>font-family: font-size: font-weight: text-decoration:</td>
+                    <td>
+<pre>font-family: sans-serif; 
+font-size: 1vw; 
+font-weight: bold; 
+text-decoration: underline;</pre>
+                    </td>
                     <td></td>
                     <td><a href="https://cssreference.io/typography/">CSS Typography</a> <br>
                     <a href="https://web.dev/learn/css/typography">very detailed CSS Typography</a></td>
                 </tr>
                 <tr>
                     <td>transform</td>
-                    <td>transform: translate(x,y); <br>
-                        roated(0deg);
-                        skew(xdeg, ydeg);
-                        scale(0);
+                    <td>
+<pre>transform: translate(x,y);
+transform: roate(0deg);
+transform: skew(xdeg, ydeg);
+transform: scale(0);</pre>
                     </td>
                     <td></td>
                     <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform MDN Reference</a></td>
                 </tr>
                 <tr>
                     <td>filter</td>
-                    <td>filter: blur(0px);
-                        invert(0%);
-                        contrast(200%);
+                    <td>
+<pre>filter: blur(0px);
+filter: invert(0%);
+filter: contrast(200%);</pre>
                     </td>
-                    <td></td>
+                    <td>Fügt einen Filter zu Bildern oder anderen Elementen wie Text hinzu.</td>
                     <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">Filter MDN Reference</a><br>
                     <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_filter&preval=blur(5px)">Filter Demo</a></td>
                 </tr>
                 <tr>
                     <td>shadow</td>
-                    <td>text-shadow: box-shadow:</td>
-                    <td></td>
+                    <td>
+<pre>text-shadow: 2px 2px 5px blue;
+box-shadow: 3px 5px 5px red;
+</pre>
+                    </td>
+                    <td>offset-x, offset-y, blur radius, color</td>
                     <td>
                     Box-shadow:
                     <a href="https://css-tricks.com/almanac/properties/b/box-shadow/">CSS Tricks Reference</a><br>
@@ -248,25 +288,31 @@
                 <tr>
                     <td rowspan="5">Größe</td>
                     <td>width</td>
-                    <td>width: (%, px, vw, rem)</td>
+                    <td><pre>width: ;</pre></td>
+                    <td>mögliche Units; %, px, vw, rem</td>
                 </tr>
                 <tr>
                     <td>height</td>
-                    <td>height: (%, px, vh, rem)</td>
+                    <td><pre>height: ;</pre></td>
+                    <td>mögliche Units; %, px, vw, rem</td>
                 </tr>
                 <tr>
                     <td>margin</td>
-                    <td>margin: (%, px, vw, rem)</td>
-                    <td>äußeres Padding</td>
+                    <td><pre>margin: ;</pre></td>
+                    <td>äußeres Padding (mögliche Units; %, px, vw, rem)</td>
                 </tr>
                 <tr>
                     <td>padding</td>
-                    <td>padding: (%, px, vw, rem)</td>
-                    <td>inneres Padding</td>
+                    <td><pre>padding: ;</pre></td>
+                    <td>inneres Padding (mögliche Units; %, px, vw, rem)</td>
                 </tr>
                 <tr>
                     <td>border</td>
-                    <td>border-width: border-color: border-style: </td>
+                    <td>
+<pre>border-width: 2px;
+border-color: red; 
+border-style: dotted;</pre>
+                    </td>
                     <td></td>
                     <td>
                         <a href="https://www.w3schools.com/css/css_border.asp">W3 Schools Reference</a><br>
@@ -275,21 +321,35 @@
                 <tr>
                     <td rowspan="3">Layout</td>
                     <td>position</td>
-                    <td>absolute: fixed: relative: static:</td>
+                    <td>
+<pre>position: absolute;
+position: fixed;
+position: relative;
+position: static; (default)</pre>
+                    </td>
                     <td></td>
+                    <td><a href="https://hub.xpub.nl/cerealbox/~kim/cssposition/index.html">try it out!</a></td>
                 </tr>
                 <tr>
                     <td>display</td>
-                    <td>block: inline: flex: grid:</td>
+                    <td>
+<pre>display: block;
+display: inline;
+display: flex;
+display: grid;</pre>
+                    </td>
                     <td>Mit display legen wir fest ob das Element block oder inline ist oder entscheiden Layouts wie Grid oder Flex.</td>
                     <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN Reference CSS Display</a><br>
                         <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks: Display Flex</a><br>
-
                     </td>
                 </tr>
                 <tr>
                     <td>column</td>
-                    <td>columns: column-count: column-width:</td>
+                    <td>
+<pre>columns: 2 auto;
+column-count: 2;
+column-width: 45%;</pre>
+                        </td>
                     <td></td>
                     <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns">MDN Reference Columns</a></td>
                 </tr>
@@ -347,6 +407,9 @@
             <img src="/assets/img/css-04.png" alt="">
         </section>
 
+        <section>
+            <img src="/assets/video/cascading.gif" alt="">
+        </section>
     </main>
 </body>
 </html>
