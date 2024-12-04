@@ -29,6 +29,7 @@
         table {
             border-collapse: collapse;
             border: 1px solid black;
+            max-width: 70vw;
         }
         th,
         td {
@@ -59,6 +60,15 @@
             <p>"deklarativ" (eine Liste mit Regeln)</p>
 
             <p>warum ist das so anders als Gestaltung für Print?</p>
+            <ul>
+                <li>Design für print: Designer*in kann jeden Schritt des Prozesses kontrollieren (material, layout, größe) und es wird genau wie geplant bei Benutzer*innen ankommen.</li>
+                <li>Benutzer*in kontrolliert wie Inhalte dargestellt werden (default Einstellungen, Browser Wahl, Gerät, Größe…)
+                    <ul>
+                        <li>Designen für Unbekanntes, Veränderung, Anpassung </li>
+                        <li>Designer*innen kontrollieren nicht mehr das Ergebnis sondern suggerieren (schlagen vor), deswegen ist CSS eine "deklarative" (vorschlagende, erklährende) Sprache</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         <section>
@@ -257,20 +267,50 @@
                 </tr>
             </table>
 
-
-            <p>filter</p>
-            <p>text-shadow/ box-shadow</p>
-
-            <h3>größe:</h3>
-            <p>width, height, border, margin, padding</p>
-
-            <h3>layout:</h3>
-            <p>position, display, column</p>
         </section>
 
         <section>
-            <h1>basic values (units)</h1>
-            <p>%, vw, vh, px, rem</p>
+            <h1>Basic values (units)</h1>
+            <p>Die meisten numerischen values brauchen eine unit (Einheit)</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Beschreibung</th>
+                        <th>Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>%</td>
+                        <td>Prozent: immer relativ zum value des parent Elements.</td>
+                        <td rowspan="6">
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">MDN Reference Values and Units</a><br>
+                            <a href="https://css-tricks.com/css-length-units/">CSS Tricks: Length Units</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>vw</td>
+                        <td>Viewport Width prozent der Breite des viewports</td>
+                    </tr>
+                    <tr>
+                        <td>vh</td>
+                        <td>Viewport Height prozent der Höhe des viewports</td>
+                    </tr>
+                    <tr>
+                        <td>px</td>
+                        <td>Pixel sind statisch rendern values unabhängig von anderen Elmenten</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>relativ zur parent Element font-size</td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>relativ zur root font-size</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section>
