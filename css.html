@@ -69,7 +69,7 @@
         </section>
 
         <section>
-            <h1>basic selectors</h1>
+            <h1>Basic selectors</h1>
             <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
             <table>
                 <thead>
@@ -127,21 +127,21 @@
                         <td colspan="3">Pseudo Selectors: werden mit : geschrieben, fragen Element status ab</td>
                     </tr>
                     <tr>
-                        <td>hover</td>
+                        <td>:hover</td>
                         <td>p:hover { 
                             color: blue;
                         }</td>
                         <td>Hover beschreibt was passiert wenn du deinen cursor über dem Element bewegst. Hier: wenn du über &lt;p&gt; hoverst, ändert sich die Textfarbe zu Blau.</td>
                     </tr>
                     <tr>
-                        <td>active</td>
+                        <td>:active</td>
                         <td>a:active { 
                             color: yellow;
                         }</td>
                         <td>Wenn ein link geklickt wurde</td>
                     </tr>
                     <tr>
-                        <td>has</td>
+                        <td>:has</td>
                         <td>div:has(p) {
                             background-color: grey;
                         }
@@ -150,17 +150,114 @@
                     </tr>
                 </tbody>
             </table>
-
-
+            
+            <p>weitere Resourcen:</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">CSS Selectors MDN Overview</a> <br>
+            <a href="https://css-tricks.com/css-selectors/">CSS Tricks</a>
 
         </section>
 
         <section>
-            <h1>Basic Properties</h1>
-            <h3>styles:</h3>
-            <p>CSS kennt 145 Farben beim Namen (color, background-color): <a href="https://raphaelbastide.com/salmon-olive/">HTML Colors List</a></p>
-            <p>Fonts: Default / Custom (+ fontsize, font-weight, text-decoration)</p>
-            <p>transform</p>
+            <h1>Basic properties</h1>
+            <table>
+                <tr>
+                    <td rowspan="5">Styles</td>
+                    <td>color</td>
+                    <td>color: background-color:</td>
+                    <td>CSS kennt 145 Farben beim Namen</td>
+                    <td><a href="https://raphaelbastide.com/salmon-olive/">HTML Colors List</a></td>
+                </tr>
+                <tr>
+                    <td>fonts</td>
+                    <td>font-family: font-size: font-weight: text-decoration:</td>
+                    <td></td>
+                    <td><a href="https://cssreference.io/typography/">CSS Typography</a> <br>
+                    <a href="https://web.dev/learn/css/typography">very detailed CSS Typography</a></td>
+                </tr>
+                <tr>
+                    <td>transform</td>
+                    <td>transform: translate(x,y); <br>
+                        roated(0deg);
+                        skew(xdeg, ydeg);
+                        scale(0);
+                    </td>
+                    <td></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform MDN Reference</a></td>
+                </tr>
+                <tr>
+                    <td>filter</td>
+                    <td>filter: blur(0px);
+                        invert(0%);
+                        contrast(200%);
+                    </td>
+                    <td></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">Filter MDN Reference</a><br>
+                    <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_filter&preval=blur(5px)">Filter Demo</a></td>
+                </tr>
+                <tr>
+                    <td>shadow</td>
+                    <td>text-shadow: box-shadow:</td>
+                    <td></td>
+                    <td>
+                    Box-shadow:
+                    <a href="https://css-tricks.com/almanac/properties/b/box-shadow/">CSS Tricks Reference</a><br>
+                    <a href="https://www.cssmatic.com/box-shadow">Generator</a><br>
+                    Text-Shadow:
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">MDN Reference</a><br>
+                    <a href="https://cssgenerator.org/text-shadow-css-generator.html">Generator</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Größe</td>
+                    <td>width</td>
+                    <td>width: (%, px, vw, rem)</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>height: (%, px, vh, rem)</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>margin: (%, px, vw, rem)</td>
+                    <td>äußeres Padding</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>padding: (%, px, vw, rem)</td>
+                    <td>inneres Padding</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>border-width: border-color: border-style: </td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.w3schools.com/css/css_border.asp">W3 Schools Reference</a><br>
+                        <a href="https://cssgenerator.org/border-css-generator.html">Generator</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Layout</td>
+                    <td>position</td>
+                    <td>absolute: fixed: relative: static:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>block: inline: flex: grid:</td>
+                    <td>Mit display legen wir fest ob das Element block oder inline ist oder entscheiden Layouts wie Grid oder Flex.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN Reference CSS Display</a><br>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks: Display Flex</a><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>column</td>
+                    <td>columns: column-count: column-width:</td>
+                    <td></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns">MDN Reference Columns</a></td>
+                </tr>
+            </table>
+
+
             <p>filter</p>
             <p>text-shadow/ box-shadow</p>
 
