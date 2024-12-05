@@ -4,8 +4,8 @@
   }
 
   @font-face {
-    font-family: "Erika";
-    src: url("./fonts/G2-Erika-Mono.woff") format("opentype");
+    font-family: "Times Dot";
+    src: url("./fonts/TimesDotRom.otf") format("opentype");
   }
 
   @font-face {
@@ -24,12 +24,6 @@
   }
 
 
-  :root {
-    --primary-color: #585858;
-    --secondary-color: rgb(228, 112, 63);
-    --tertiary-color: #d8d7d7;
-    --text-base: 1vw;
-    }
     
   
   html, body {
@@ -37,7 +31,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Erika";
+    font-family: "TimesDot";
     font-size: var(--text-base);
     color: var(--primary-color);
   }
