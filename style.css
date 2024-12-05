@@ -36,10 +36,14 @@ h1 {
 }
 
 nav {
-  position: fixed;
-  left: 1rem;
-  top: 15rem;
-  width: 20vw;
+  position: sticky;
+  top: 2rem;
+  z-index: 100;
+  background: white;
+}
+
+nav ul {
+  display: flex;
 }
 
 #toplink {
@@ -54,8 +58,9 @@ nav {
   gap: .25rem;
   flex-wrap: wrap;
 }
+
 .imgflex img {
-  width: autp;
+  width: auto;
   height: 25vh;
 }
 
@@ -168,4 +173,93 @@ th {
 
 td {
   text-align: center;
+}
+
+
+.hero {
+  margin-top: 0; 
+  padding-top: 0; 
+  width: 100vw; 
+  flex-shrink:0;
+  display: flex; 
+  align-items: center; 
+  background: white; 
+  justify-content: center; 
+}
+
+.hero__list {
+  display: grid; 
+  gap: 0; 	
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+option, input {
+  font-family: Erika !important;
+  color: rgb(120,120,120);
+} 
+
+form {
+  width: 50%;
+  font-size: 1.5rem;
+  line-height: 1.35; 
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.35; 
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  width: 1.5rem; /* Adjust size */
+  height: 1.5rem; /* Adjust size */
+  border: 1px solid var(--primary-color);
+  border-radius: 50%; /* Makes it a circle */
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 2;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--primary-color);
+}
+
+input[type=text] {
+  height: 1.75rem;
+  margin-top: -2px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 100%;
+  border-radius: 100rem;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+input[type=radio] {
+  margin:0;
+  transform: translateY(0.15rem);
+}
+
+
+#other-field {
+  opacity: 0;
+  margin-top: 10px;
+}
+
+/* Show the additional input field when "Something else" checkbox is checked */
+#something_else:checked + #other-field {
+  opacity: 1;
+}
+
+label:has( > #something_else:checked) + #other-field {
+  opacity: 1;
 }
