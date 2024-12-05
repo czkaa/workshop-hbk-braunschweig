@@ -24,6 +24,7 @@
     scroll-behavior: smooth;
     font-family: "Erika";
     font-size: var(--text-base);
+    color: var(--primary-color);
   }
  
   
