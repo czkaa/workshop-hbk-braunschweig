@@ -4,60 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="introductions.css">
 
     <title>Einführung CSS</title>
-    <style>
-        h1 {
-            font-size: 2.5vw;
-        }
-        section {
-            width: 100%;
-            min-height: 100vh;
-        }
-        img {
-            display: block;
-            margin: auto;
-            max-width: 60%;
-        }
-        .two {
-            max-width: 40%;
-        }
-        pre {
-            width: fit-content;
-            /* background-color: yellow; */
-            margin: 0;
-        }
-        table {
-            border-collapse: collapse;
-            border: 1px solid black;
-            max-width: 70vw;
-        }
-        th,
-        td {
-            border: 1px solid black;
-            padding: 1vw;
-        }
-        td:has(pre) {
-            background-color: yellow;
-        }
-        nav {
-            position: fixed;
-            left: 2vw;
-            top: 45%;
-        }
-        ul li {
-            list-style-type: disc;
-        }
-        li {
-            padding-inline: 3vw;
-        }
-        li ul li {
-            list-style-type: circle;
-        }
-        li ul {
-            padding-inline: 3vw;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -78,34 +27,14 @@
             <img class="two" src="/assets/img/unmöbeliert.jpg" alt="">
             <p>CSS: (Gestaltung, Einrichtung)</p>
             <img class="two"  src="/assets/img/möbeliert.webp" alt="">
+
+            <p>Regeln, die das Aussehen einer Webseite beschreiben</p>
         </section>
 
-        <section id="eigen">
-            <h1>Eigenheiten:</h1>
-            <h1><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</h1>
-            <p>cascading?</p>
-            <img src="/assets/video/cascading.gif" alt="">
-            <p>"Cascading"(en) für "herabstürzen", "hintereinanderschalten", "etw. nach unten weitergeben"</p>
-        </section>
-
-        <section>
-            <p>"deklarativ" (eine Liste mit Regeln)</p>
-
-            <p>warum ist das so anders als Gestaltung für Print?</p>
-            <ul>
-                <li>Design für print: Designer*in kann jeden Schritt des Prozesses kontrollieren (material, layout, größe) und es wird genau wie geplant bei Benutzer*innen ankommen.</li>
-                <li>Benutzer*in kontrolliert wie Inhalte dargestellt werden (default Einstellungen, Browser Wahl, Gerät, Größe…)
-                    <ul>
-                        <li>Designen für Unbekanntes, Veränderung, Anpassung </li>
-                        <li>Designer*innen kontrollieren nicht mehr das Ergebnis sondern suggerieren (schlagen vor), deswegen ist CSS eine "deklarative" (vorschlagende, erklährende) Sprache</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
 
         <section id="wie">
             <h1>Wie schreibe ich CSS?</h1>
-            <p>syntax</p>
+            <p>Syntax</p>
             <img src="/assets/img/css-01.png" alt="">
             <img src="/assets/img/css-02.png" alt="">
         </section>
@@ -113,6 +42,20 @@
         <section id="selectors">
             <h1>Basic selectors</h1>
             <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
+
+            <p>
+                <p>
+                    <pre><code>
+&lt;p&gt;<span style="color: red">Dies ist ein Absatz.</span>&lt;/p&gt;
+                    </code></pre>
+                </p>
+
+                <pre><code>
+p {
+    color: red;
+}
+                </code></pre>
+            </p>
             <table>
                 <thead>
                     <tr>
@@ -207,9 +150,28 @@
                     </tr>
                 </tbody>
             </table>
-            
-            <p>weitere Resourcen:</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">CSS Selectors MDN Overview</a> <br>
+
+            <p>Die häufigsten Selektoren sind ID und Klassen. IDs werden für Elemente benutzt, die nur ein mal auf der Seite auftauchen. Ein Element kann nur eine ID haben. Klassen werden verwendet, um Gruppen von Elementen anzusprechen. Ein Element kann mehrere Klassen haben</p>
+
+            <p>Eine Selektoren sprechen den Tag eines Elementes an, andere können über Attribute eingefügt werden</p>
+            <pre><code>
+<span style="color: red;">&lt;a <span style="color: blue">id="first-paragraph"</span><span style="color: rgb(255, 0, 234)">class="italic-paragraph"</span>&gt;</span><span style="font-style: italic; text-decoration-style: dotted; text-decoration: underline;">Ich bin ein Absatz</span><span style="color: red">&lt;/a&gt;</span>
+            </code></pre>
+
+            <pre><code>
+p {
+    color: black;
+}
+
+#first-paragraph {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+            </code></pre>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">Übersicht über alle CSS-Selektoren</a> <br>
             <a href="https://css-tricks.com/css-selectors/">CSS Tricks</a>
 
         </section>
@@ -401,15 +363,113 @@ column-width: 45%;</pre>
             </table>
         </section>
 
+        <section id="uebung-2">
+            <h2>Übung 1: CSS Takeover</h2>
+
+            <p class="task">
+                Öffne eine Seite, auf der du dich häufig aufhälst, im Browser. Drücke <code>Option + ⌘ + I</code> (Mac) oder <code>Srg + I</code> (Windows)</p>, um den Inspektor zu öffnen. Verändere das CSS der Seite, bis sie dir besser gefällt. Achtung: Wenn du die Seite neu lädst, gehen deine Änderungen verloren!
+            </p>
+               <!-- 
+                1. ..
+                -->
+        </section>
+
         <section id="csshtml">
             <h1>Und wie verbinde ich das mit HTML?</h1>
-            <img src="/assets/img/css-03.png" alt="">
+
+            <p>inline</p>
+            <pre><code>
+&lt;p style="color: red;"&gt;
+    Ich bin ein Absatz
+&lt;/py&gt;
+            </code></pre>
+
+            <p>internal</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+    &lt;html lang="de"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;HTML Einführung&lt;/title&gt;
+        &lt;/head&gt;    
+    &lt;body&gt;
+        &lt;style"&gt;
+            &lt;p style="color: red;"&gt;
+            &lt;/py&gt;
+        &lt;/styley&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+
+            <p>external</p>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html lang="de"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;HTML Einführung&lt;/title&gt;
+                            &lt;link&gt; rel="stylesheet" type="text/css" href="style.css" &gt;
+                        &lt;/head&gt;    
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+
+            <!-- <img src="/assets/img/css-03.png" alt=""> -->
+        </section>
+
+        <section id="eigen">
+            <h1>Eigenheiten:</h1>
+            <h1><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</h1>
+            <p>cascading?</p>
+            <img src="/assets/video/cascading.gif" alt="">
+            <p>"Cascading"(en) für "herabstürzen", "hintereinanderschalten", "etw. nach unten weitergeben"</p>
+
             <img src="/assets/img/css-04.png" alt="">
+
         </section>
 
         <section>
-            <img src="/assets/video/cascading.gif" alt="">
+            <p>"deklarativ" (eine Liste mit Regeln)</p>
+
+            <p>warum ist das so anders als Gestaltung für Print?</p>
+            <ul>
+                <li>Design für print: Designer*in kann jeden Schritt des Prozesses kontrollieren (material, layout, größe) und es wird genau wie geplant bei Benutzer*innen ankommen.</li>
+                <li>Benutzer*in kontrolliert wie Inhalte dargestellt werden (default Einstellungen, Browser Wahl, Gerät, Größe…)
+                    <ul>
+                        <li>Designen für Unbekanntes, Veränderung, Anpassung </li>
+                        <li>Designer*innen kontrollieren nicht mehr das Ergebnis sondern suggerieren (schlagen vor), deswegen ist CSS eine "deklarative" (vorschlagende, erklährende) Sprache</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
+
+        <section id="uebung-2">
+            <h2>Übung 2: Stilleben / ?</h2>
+
+            <p class="task">
+                ?
+            </p>
+               <!-- 
+                1. ..
+                -->
+        </section>
+
+
+
+        <section id="uebung-2">
+            <h2>Übung 3: Setup</h2>
+
+            <p class="task">
+                Gemeinsam legen wir ein Stylesheet für deine Webseite an.
+            </p>
+               <!-- 
+                1. ..
+                -->
+        </section>
+
     </main>
 </body>
 </html>

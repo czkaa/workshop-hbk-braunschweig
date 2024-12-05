@@ -91,3 +91,43 @@ header {
     top: 0;
     height: 0;
 }
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+}
+.two {
+    max-width: 40%;
+}
+pre {
+    width: fit-content;
+    /* background-color: yellow; */
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    max-width: 70vw;
+}
+th,
+td {
+    border: 1px solid black;
+    padding: 1vw;
+}
+td:has(pre) {
+    background-color: yellow;
+}
+
+ul li {
+    list-style-type: disc;
+}
+li {
+    padding-inline: 3vw;
+}
+li ul li {
+    list-style-type: circle;
+}
+li ul {
+    padding-inline: 3vw;
+}
