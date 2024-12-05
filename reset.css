@@ -8,6 +8,21 @@
     src: url("./fonts/G2-Erika-Mono.woff") format("opentype");
   }
 
+  @font-face {
+    font-family: "times-dot";
+    src: url("./fonts/timesdotrom.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "times-dot-bold";
+    src: url("./fonts/timesdotbol.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "times-dot-ital";
+    src: url("./fonts/times_dot-italic.woff2") format("woff2");
+  }
+
 
   :root {
     --primary-color: #585858;
