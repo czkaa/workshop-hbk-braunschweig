@@ -59,24 +59,75 @@
         
         table {
             border-spacing: 0;
-            border: 0.5px solid black;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
             width: 100%;
             font-size: 1.3rem;
-            background: lightgray;
         }
         th, td {
             padding: 0.25rem;
             text-align: center;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;            
+            margin: -0.5px;
         }
+        a {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+        a:hover {
+            font-style: italic;
+        }
+
+        nav {
+            border: 1px solid black;
+            border-radius: 100%;
+            aspect-ratio: 1;
+            width: fit-content;
+            font-size: 1.3rem;
+            padding: 3rem;
+        }
+
+        nav ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            height: 0;
+        }
+
     </style>
 
 </head>
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <h2>Inhalt</h2>
+
+                <li><a href="#was-ist-html">Was ist HTML</a></li>
+                <li><a href="#grundstruktur">Grundstruktur eines <br>HTML-Dokuments</a></li>
+                <li><a href="#head">Head</a></li>
+                <li><a href="#body">Body</a></li>
+                <li><a href="#uebung-1">Übung-1</a></li>
+                <li><a href="#uebung-2">Übung-2</a></li>
+                <li><a href="#hinweise">Hinweise</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1>HTML Einführung</h1>
 
-        <section>
+        <section id="was-ist-html">
             <h2>1. Was ist HTML? </h2>
             <p><i><b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>aguage</i></p>
             <p>Eine Text-Dokument, dass von einem Web-Browser interpretiert wird</p>
@@ -85,7 +136,7 @@
         </section>
 
 
-        <section>
+        <section id="grundstruktur">
             <h2>2. Grundstruktur eines HTML-Dokuments</h2>
         
             <pre><code>
@@ -108,7 +159,7 @@
 
         </section>
 
-        <section>
+        <section id="head">
             <h2>Head</h2>
             <pre><code>
 &lt;head&gt;
@@ -123,7 +174,7 @@
 
         </section>
 
-        <section>
+        <section id="body">
             <h2>Body</h2>
 
             <pre><code> 
@@ -148,11 +199,11 @@
 
             <video  controls src="/assets/video/body.mp4"></video>
 
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                 <th>Tag</th>
-                <th>Anzeige</th>
+                <th>Display</th>
                 <th>Selbstschließend</th>
                 </tr>
             </thead>
@@ -629,14 +680,14 @@
             <p>Einige HTML-Elemente enthalten <span style="color: rgb(255, 0, 234)">Attribute</span></p>
             <p>
                 <pre><code>
-    <span style="color: red">&lt;a <span style="color: rgb(255, 0, 234)">href="poem.html"</span>&gt;</span><span style="color: blue">Mein Lieblings-Gedicht</span></span><span style="color: rgb(0, 255, 89)">&lt;/a&gt;</span>
+<span style="color: red">&lt;a <span style="color: rgb(255, 0, 234)">href="poem.html"</span>&gt;</span><span style="color: blue">Mein Lieblings-Gedicht</span></span><span style="color: rgb(0, 255, 89)">&lt;/a&gt;</span>
                 </code></pre>
             </p>
             <p>Einige Elemente nehmen automatisch 100% der Breite der Seite ein (block-Elemente) und andere nicht (inline-Elemente)</p>
             <p>Einige Elemente verändern das Aussehen der Inhalte, andere nicht</p>
         </section>
 
-        <section>
+        <section id="uebung-2">
             <h2>Übung 1: HTML Poetry</h2>
 
             <p class="task">
@@ -655,7 +706,7 @@
 
         </section>
 
-        <section>
+        <section id="uebung-2">
             <h2>Übung 2: Templating</h2>
 
             <p class="task">
@@ -675,8 +726,7 @@
 
         </section>
 
-        <section>
-
+        <section id="hinweise">
             <p>Häufige Fehler:</p>
             <ul>
                 <li>Fehlende schließende Tags</li>
