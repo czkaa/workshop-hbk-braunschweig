@@ -7,22 +7,21 @@
     font-family: "Times Dot";
     font-style: normal;
     font-weight: normal;
-    src: url("./fonts/TimesDotRom.otf") format("opentype");
+    src: url("./fonts/timesdotrom.woff2") format("woff2");
   }
 
-
   @font-face {
-    font-family: "Times Dot";
+    font-family: "Times Dot bold";
     font-weight: bold;
     font-style: normal;
-    src: url("./fonts/timesdotbol.woff2") format("woff");
+    src: url("./fonts/timesdotbol.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "Times Dot";
+    font-family: "Times Dot italic";
     font-style: italic;
     font-weight: normal;
-    src: url("./fonts/Times Dot-Italic.oft") format("opentype");
+    src: url("./fonts/times_dot-italic.woff2") format("woff2");
   }
 
 
@@ -53,7 +52,7 @@
   }
 
   h1,h2, h3 {
-    font-family: "times-dot", serif;
+    font-family: "Times Dot", serif;
     font-weight: normal;
     text-align: center;
   }
