@@ -117,6 +117,7 @@ td {
 }
 td:has(pre) {
     background-color: yellow;
+    text-align: left;
 }
 
 ul li {
