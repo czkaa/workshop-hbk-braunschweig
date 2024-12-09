@@ -23,11 +23,13 @@ ol {
         textarea {
             font-family: "Times Dot";
             font-size: 1.5rem;
+            resize: none;
+            margin-top: 0.5rem;
         }
 
         hr {
             width: 100vw;
-            margin: 3vh 0;
+            margin: 3rem 0;
         }
         a {
             color: blue;
@@ -93,5 +95,9 @@ ol {
 
             li {
                 page-break-after: always;
+            }
+
+            #diagramme {
+                page-break-before: always;
             }
         }
