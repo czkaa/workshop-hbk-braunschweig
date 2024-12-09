@@ -1,9 +1,17 @@
+:root {
+  --dark-azure: #007979;
+  --red: red;
+  --moss: #00a15a;
+  --navy: navy;
+  --font-color: var(--navy);
+}
+
 body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Times Dot";
-  color: rgb(71, 71, 71);
+  color: var(--font-color);
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -18,12 +26,12 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
   color: white;
-  background: rgb(71, 71, 71);
+  background: var(--font-color);
 }
 
 ::selection {
   color: white;
-  background: rgb(71, 71, 71);
+  background: var(--font-color);
 }
 
 b {
@@ -48,6 +56,7 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
+  color: var(--font-color);
 }
 
 nav {
@@ -133,7 +142,7 @@ section {
   width: 100%;
   overflow: hidden;
   margin-top: 8rem;
-  border-top: 2px dotted black;
+  border-top: 2px dotted var(--font-color);
   padding-top: 8rem;
 }
 
