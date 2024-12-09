@@ -44,10 +44,13 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 
 nav ul li {
   list-style-type: none;
+  padding-left: 0;
+  padding: 0 1rem;
 }
 
 #toplink {
@@ -80,6 +83,15 @@ h2 {
   margin-bottom: 2rem;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
 main {
   width: 100%;
   font-size: 1.5rem;
@@ -89,7 +101,6 @@ main {
   margin-left: 25vw;
   margin-right: 25vw;
   overflow: hidden;
-
 }
 
 
@@ -129,7 +140,7 @@ section {
   width: 100%;
   overflow: hidden;
   margin-top: 10rem;
-  border-top: 1px solid black;
+  border-top: 2px dotted black;
   padding-top: 15rem;
 }
 
