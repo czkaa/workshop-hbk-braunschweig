@@ -6,12 +6,14 @@ body, h1, h2, h3 * {
 
 h1 {
     margin-bottom: 5rem;
+    font-size: 1.7em;
 }
 
 a {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
 a:hover {
     font-style: italic;
 }
@@ -19,6 +21,11 @@ a:hover {
 pre {
     width: fit-content;
     margin: 0;
+}
+
+p {
+    width: 100%;
+    margin: 1vh 0;
 }
 
 code {
@@ -33,12 +40,18 @@ code {
     transform: translateY(0.25rem);
     padding: 0.2rem 0.2rem 0 0.2rem ;
     color: rgb(39, 39, 39);
+    margin-bottom: 2vh;
+}
+
+p > code {
+    margin-bottom: 0;
 }
 
 header {
     position: sticky;
-    top: 0;
     height: 0;
+    top: 1rem;
+    margin-left: 1rem;
 }
 
 main {
@@ -49,7 +62,10 @@ main {
 }
 
 section {
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15rem;
 }
 
 nav {
@@ -62,11 +78,14 @@ nav {
 }
 
 nav ul {
-    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
+    max-width: 100%;
 }
 
 video, iframe {
@@ -89,6 +108,7 @@ table {
     border: 1px solid black;
     max-width: 100%;
     font-size: 1.2rem;
+    margin-bottom: 5vh;
 }
 
 th,
@@ -105,17 +125,48 @@ td:has(pre) {
     text-align: left;
 }
 
-ul li {
+/* ul li {
     list-style-type: disc;
 }
+
 li {
     padding-inline: 3vw;
 }
+
 li ul li {
     list-style-type: circle;
 }
+
 li ul {
     padding-inline: 3vw;
+} */
+
+ul {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    list-style-type: disc;
+    padding-left: 2rem;
+    max-width: 80%;
+}
+
+ul, ul li {
+    list-style-type: disc;
+}
+
+li {
+    position: relative;
+    display: list-item;
+    padding-left: 1.5rem !important;
+}
+
+li > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li ul li {
+    list-style-type: circle;
 }
 
 .two {

@@ -23,12 +23,11 @@
     <main style="max-width: 70vw; margin: auto; gap: 1rem; display: flex; flex-direction: column; padding: 1rem">
         <section id="was">
             <h1>Was ist CSS?</h1>
-            <p>HTML: (Struktur, Gerüst)</p>
-            <img class="two" src="/assets/img/unmöbeliert.jpg" alt="">
-            <p>CSS: (Gestaltung, Einrichtung)</p>
-            <img class="two"  src="/assets/img/möbeliert.webp" alt="">
-
             <p>Regeln, die das Aussehen einer Webseite beschreiben</p>
+            <p>HTML: Struktur, Gerüst</p>
+            <img class="two" src="/assets/img/unmöbeliert.jpg" alt="">
+            <p>CSS: Gestaltung, Einrichtung</p>
+            <img class="two"  src="/assets/img/möbeliert.webp" alt="">
         </section>
 
 
@@ -41,7 +40,7 @@
 
         <section id="selectors">
             <h1>Basic selectors</h1>
-            <p>Um ein order mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
+            <p>Um ein oder mehrere Elemente des HTML zu stylen, müssen wir es geziehlt auswählen (select).</p>
 
             <p>
                 <p>
@@ -367,7 +366,7 @@ column-width: 45%;</pre>
             <h2>Übung 1: CSS Takeover</h2>
 
             <p class="task">
-                Öffne eine Seite, auf der du dich häufig aufhälst, im Browser. Drücke <code>Option + ⌘ + I</code> (Mac) oder <code>Srg + I</code> (Windows)</p>, um den Inspektor zu öffnen. Verändere das CSS der Seite, bis sie dir besser gefällt. Achtung: Wenn du die Seite neu lädst, gehen deine Änderungen verloren!
+                Öffne eine Seite, auf der du dich häufig aufhälst, im Browser. Drücke <code>Option + ⌘ + I</code> (Mac) oder <code>Srg + I</code> (Windows), um den Inspektor zu öffnen. Verändere das CSS der Seite, bis sie dir besser gefällt. Achtung: Wenn du die Seite neu lädst, gehen deine Änderungen verloren!
             </p>
                <!-- 
                 1. ..
@@ -381,7 +380,7 @@ column-width: 45%;</pre>
             <pre><code>
 &lt;p style="color: red;"&gt;
     Ich bin ein Absatz
-&lt;/py&gt;
+&lt;/p&gt;
             </code></pre>
 
             <p>internal</p>
@@ -392,29 +391,31 @@ column-width: 45%;</pre>
             &lt;meta charset="UTF-8"&gt;
             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
             &lt;title&gt;HTML Einführung&lt;/title&gt;
-        &lt;/head&gt;    
+            &lt;style&gt;
+                p {
+                    color: red;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
     &lt;body&gt;
-        &lt;style"&gt;
-            &lt;p style="color: red;"&gt;
-            &lt;/py&gt;
-        &lt;/styley&gt;
+
     &lt;/body&gt;
 &lt;/html&gt;
             </code></pre>
 
             <p>external</p>
             <pre><code>
-                &lt;!DOCTYPE html&gt;
-                    &lt;html lang="de"&gt;
-                        &lt;head&gt;
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                            &lt;title&gt;HTML Einführung&lt;/title&gt;
-                            &lt;link&gt; rel="stylesheet" type="text/css" href="style.css" &gt;
-                        &lt;/head&gt;    
-                    &lt;body&gt;
-                    &lt;/body&gt;
-                &lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+    &lt;html lang="de"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;HTML Einführung&lt;/title&gt;
+            &lt;link&gt; rel="stylesheet" type="text/css" href="style.css" &gt;
+        &lt;/head&gt;    
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
             </code></pre>
 
             <!-- <img src="/assets/img/css-03.png" alt=""> -->
@@ -422,7 +423,7 @@ column-width: 45%;</pre>
 
         <section id="eigen">
             <h1>Eigenheiten:</h1>
-            <h1><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</h1>
+            <p><i><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</i></p>
             <p>cascading?</p>
             <img src="/assets/video/cascading.gif" alt="">
             <p>"Cascading"(en) für "herabstürzen", "hintereinanderschalten", "etw. nach unten weitergeben"</p>
