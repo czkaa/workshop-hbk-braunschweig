@@ -96,11 +96,30 @@ video, iframe {
     aspect-ratio: 16/9;
 }
 
+figure {
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+figure ~ figure {
+    margin-top: 2vh;
+}
+
 img {
     display: block;
     margin: auto;
     max-width: 60%;
 }
+
+figcaption {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+
 
 table {
     border-spacing: 0;
@@ -167,10 +186,6 @@ li > ul {
 
 li ul li {
     list-style-type: circle;
-}
-
-.two {
-    max-width: 40%;
 }
 
 .task {
