@@ -43,6 +43,11 @@ nav {
 
 nav ul {
   display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  list-style-type: none;
 }
 
 #toplink {
@@ -92,20 +97,23 @@ ul {
   text-align: left;
   margin-top: 1rem;
   margin-bottom: 5rem;
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+ul, ul li {
+  list-style-type: disc;
 }
 
 li {
   position: relative;
+  display: list-item;
   padding-left: 1.5rem !important;
 }
 
-li:before {
-  content: "×";
-  position: absolute;
-  left: 0;
-  padding-right: 0.5rem;
-  display: inline-block;
-  transform: translateY(0rem);
+li > ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 code, pre {
