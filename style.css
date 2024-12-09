@@ -35,7 +35,6 @@ h1 {
   line-height: 1.35; 
   text-align: left;
   margin-bottom: 2rem;
-  margin-top: 1rem;
   letter-spacing: -0.02em;
 }
 
@@ -194,4 +193,4 @@ td {
 
 label:has( > #something_else:checked) + #other-field {
   opacity: 1;
-} */
+} 
