@@ -1,103 +1,107 @@
 ol {
-            padding: 1.5rem;
-        }
-        ol li {
-            width: 100%;
-            height: 50vh;
-            border: 1px solid var(--font-color);
-            list-style-type: decimal;
-            margin-bottom: 3vh;
-            border-radius: 2px;
-            padding-left: 0;
-        }
+    padding: 1.5rem;
+}
+ol li {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid var(--font-color);
+    list-style-type: decimal;
+    margin-bottom: 3rem;
+    border-radius: 2px;
+    padding-left: 0;
+}
 
-        .checkContainer {
-            margin-bottom: 3vh;
-        }
-        input[type=text] {
-            font-family: "Times Dot";
-            font-size: 1.5rem;
-            margin-top: 0.5rem
-        }
+.checkContainer {
+    margin-bottom: 3vh;
+}
+input[type=text] {
+    font-family: "Times Dot";
+    font-size: 1.5rem;
+    margin-top: 0.5rem
+}
 
-        textarea {
-            font-family: "Times Dot";
-            font-size: 1.5rem;
-            resize: none;
-            margin-top: 0.5rem;
-        }
+input[type=radio] {
+    border: 1px solid var(--font-color);
+}
 
-        hr {
-            width: 100vw;
-            margin: 3rem 0;
-        }
-        a {
-            color: blue;
-        }
+textarea {
+    font-family: "Times Dot";
+    font-size: 1.5rem;
+    resize: none;
+    margin-top: 0.5rem;
+}
 
-        #diagramme {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+hr {
+    width: 100vw;
+    margin: 3rem 0;
+}
+a {
+    color: blue;
+}
 
-        #diagramme ol {
-            width: 100%;
-            margin-top: 3rem;
-        }
-        #diagramme >  ol > li {
-            width: 100% !important;
-        }
+#diagramme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        input[type="submit"] {
-            font-size: 1rem;
-            padding: 0.2rem 0.4rem;
-            font-family: "Times Dot" !important;
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-        }
+#diagramme ol {
+    width: 100%;
+    margin-top: 3rem;
+}
+#diagramme >  ol > li {
+    width: 100% !important;
+}
 
-        textarea {
-            width: 80%;
-        }
+input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+    font-family: "Times Dot" !important;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
 
-        input, textarea {
-            border: 1px solid var(--font-color);
-            border-radius: 2px;
-            outline: none;
-        }
+textarea {
+    width: 80%;
+}
 
-        input:focus, textarea:focus {
-            border: 1px solid var(--font-color);
-            border-radius: 2px;
-            outline: none;
-        }
+input, textarea {
+    border: 1px solid var(--font-color);
+    border-radius: 2px;
+    outline: none;
+}
 
-        @media print {
+input:focus, textarea:focus {
+    border: 1px solid var(--font-color);
+    border-radius: 2px;
+    outline: none;
+}
 
-            @page {
-                size: A4 portrait;
-            }
+@media print {
 
-            hr {
-                display: none;
-            }
+    @page {
+        size: A4 portrait;
+    }
 
-            body {
-                font-size: 9px;
-                padding-top: 1rem;
-            }
+    hr {
+        display: none;
+    }
 
-            input[type="submit"] {
-                display: none;
-            }
+    body {
+        font-size: 9px;
+        padding-top: 1rem;
+    }
 
-            li {
-                page-break-after: always;
-            }
+    input[type="submit"] {
+        display: none;
+    }
 
-            #diagramme {
-                page-break-before: always;
-            }
-        }
+    li {
+        page-break-after: always;
+    }
+
+    #diagramme {
+        page-break-before: always;
+    }
+}

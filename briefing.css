@@ -21,10 +21,13 @@ header {
 form {
     margin-top: 1rem;
     text-align: left;
-    width: 50%;
-    margin:3rem auto;
+    max-width: 25rem;
+    margin: 3rem auto;
 }
 
+input {
+    max-width: 100%;
+}
 
 #other-field {
     opacity: 0;
