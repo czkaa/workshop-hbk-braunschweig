@@ -16,3 +16,25 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+
+form {
+    margin-top: 1rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+
+#other-field {
+    opacity: 0;
+}
+
+/* Show the additional input field when "Something else" checkbox is checked */
+#something_else:checked+#other-field {
+    opacity: 1;
+}
+
+label:has(> #something_else:checked)+#other-field {
+    opacity: 1;
+}

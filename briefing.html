@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="briefing.css">
-    <title>briefing</title>
+    <link rel="stylesheet" href="form.css">
+
+    <title>Vortreffen – My Website Is ...</title>
 </head>
 <body>
     <header>
@@ -14,28 +16,46 @@
             <span>Workshop HBK Braunschweig</span>
             <span>16.–20. Dezember 2024</span>
         </div>
-        <h1>My website is ...</h1>
-        <!-- ich fände es gut vielleicht mit einer simplen definition anzufangen: -->
+        <h1>My Website is ...</h1>
+       
+        <form autocomplete="off">
+            <div class="hero__list">
+                <label><input type="radio" id="spiral" name="shape">a spiral</label>
+                <label><input type="radio" id="line" name="shape">a highway</label>
+                <label><input type="radio" id="parallelogram" name="shape">a parallelogram</label>
+                <label><input type="radio" id="building" name="shape">a timeline</label>
+                <label><input type="radio" id="highway" name="shape">a blob</label>
+        
+                <label><input type="radio" id="something_else" name="shape">something else</label>
+                <div id="other-field">
+                    <input spellcheck="false" type="text" id="other-shape" name="other-shape" placeholder="">
+                </div>
+            </div>
+        </form>
     </header>
 
     <main>
-      
+
+        <section>
+
             <p class="quote">
-                „My favorite aspect of websites is their duality: they’re both subject and object at once. In other words, a website creator becomes both author and architect simultaneously. There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle? Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.“
-                <i><div class="quote__source"><a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">My Website is a Shifting House Next to a River of Knowledge,</a><br>Laurel Schwulst</div></i>
-
-
-                <!-- Eine Website ist eine einzelne oder mehrere Dateien die in einem Web Broswer augerufen werden.
-                Meistens wohnt eine Website irgendwo auf einem Server. -->
-                <!-- … hier etwas zu 'shape' ? -->
-                <!-- dann vielleicht auch etwas über die technischen schritte sagen: -->
-                <!-- Der workshop wird aus Einführungen in HTML, CSS, und kürzeren Themenbasierten inputs bestehen. Zwischendurch legen
-                wir immer wieder Pausen zum Ausprobieren, Üben und Experimentieren der gelernten Schritte ein. -->
-                <!-- und dann auch etwas dazu, was dabei rauskommen soll... (website für film) -->
-                <!-- Ziel des Workshops ist es eine Website für deinen Film und Recherche zu programmieren. -->
+                „My favorite aspect of websites is their duality: they’re both subject and object at once. In other words, a website
+                creator becomes both author and architect simultaneously. There are endless possibilities as to what a website could
+                be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle? Whatever
+                it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website
+                helps form your own identity.“
+                <i>
+                    <div class="quote__source"><a
+                            href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"
+                            target="_blank">My Website is a Shifting House Next to a River of Knowledge,</a><br>Laurel Schwulst
+                    </div>
+                </i>
             </p>
-            <br>
-            <section>
+
+        </section>
+      
+        
+        <section>
             <p>
                 In der kommenden Woche möchten wir gemeinsam herausfinden, wie wir ausgehend von einer kleinen Sammlung an Inhalten ein individuelles Konzept für eine Webseite entwickeln. Ausgangspunkt ist dabei das Material und die Filmarbeit, welches ihr über das Semester produziert habt. Ziel des Kurses ist es, zum Ende der Woche eine Webseite für diese Inhalte zu programmieren. Im Zuge dessen geben wir eine grundlegende Einführung in HTML, CSS und Javascript sowie kürzere, themenbasierte Inputs. Zwischendurch legen wir immer wieder Pausen zum Ausprobieren, Üben und Experimentieren der gelernten Schritte ein.
             </p>
