@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Fragebogen</title>
+    <style>
+        ol li {
+            width: 70vw;
+            height: 50vh;
+            border: 1px solid black;
+            list-style-type: decimal;
+            margin-bottom: 3vh;
+        }
+        input[type=text] {
+            width: 35vw;
+            height: 5vh;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .checkContainer {
+            margin-bottom: 3vh;
+            width: 40vw;
+        }
+        .checkContainer > input[type=text] {
+            width: 10vw;
+            height: auto;
+        }
+        textarea {
+            resize: none;
+            width: 35vw;
+            height: 10vh;
+        }
+        hr {
+            width: 100vw;
+            margin: 3vh 0;
+        }
+        a {
+            color: blue;
+        }
+
+        #diagramme {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p {
+            width: 35vw;
+        }
+
+        body {
+            font-size: 1.25vw;
+        }
+
+        form {
+            padding: 2vw !important;
+        }
+
+        @media print {
+
+            @page {
+                size: A4 portrait;
+            }
+
+            body {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- <div class="checkContainer">
+            <label for="ziel">Was möchtest du im Kurs lernen?</label><br>
+            <textarea id="ziel" name="ziel"></textarea>
+        </div>
+
+        <div class="checkContainer">
+            <label for="beziehung">Wie ist deine persönliche Beziehung zu Webseiten?</label><br>
+            <textarea name="beziehung" id="beziehung"></textarea>
+        </div>
+
+        <div class="checkContainer">
+            <label for="erfahrung">Hast du schon mal programmiert? Wenn ja, was?</label><br>
+            <textarea name="erfahrung" id="erfahrung"></textarea>
+        </div>
+
+        <div class="checkContainer">
+            <label for="schwerpunkt">Gibt es einen Schwerpunkt in deinem vorbereiteten Material: Text/Bild/
+                Sound/Gespräche/vorgefundene Texte/Videos/...?</label><br>
+            <input type="text" id="schwerpunkt" name="schwerpunkt">
+        </div> -->
+
+    
+
+        <div class="checkContainer">
+            <label for="gefühl">Wenn du deinen Inhalten ein Gefühl zuweisen müsstest, welches wäre es?</label><br>
+            <input type="text" id="gefühl" name="gefühl">
+        </div>
+
+        <div class="checkContainer">
+            <label for="klang">Wie klingt es?</label><br>
+            <input type="text" id="klang" name="klang"><br>
+            <a target="_blank" href="https://alttextselfies.net/">alttextselfies.net</a>, <a href="https://web.archive.org/web/20230203200034/http://website-with-the-sound-of-its-own-making.net/">website-with-the-sound-of-its-own-making.net (archived)</a>
+        </div>
+
+        <div class="checkContainer">
+            <label for="farbe">Welche Farbe hat es?</label><br>
+            <input type="text" id="farbe" name="farbe">
+            https://touchingfeeling.acca.melbourne/
+            https://simonehoang.com/
+        </div>
+
+        <div class="checkContainer">
+            <legend>Welche Form?</legend>
+            <label for="eckig">eckig</label>
+            <input type="checkbox" id="eckig" name="eckig">
+            <label for="rund">rund</label>
+            <input type="checkbox" id="rund" name="rund">
+            <label for="zackig">zackig</label>
+            <input type="checkbox" id="zackig" name="zackig">
+            https://multiplestates.co.uk/
+            <input type="text"><input type="checkbox" name="andere" value="andere"><br>
+            <a target="_blank" href="https://polinsski.digitale-grafik.com/poetic-web/unfolding-spiral.html">poetic-web/unfolding-spiral.html</a>, <a target="_blank" href="https://web.archive.org/web/20170623061813/http://psfa-bxl.org/">http://psfa-bxl.org (archived)</a>
+        </div>
+
+        <div class="checkContainer">
+            <legend>Und welche Konsistenz?</legend>
+            <label for="flüssig">flüssig</label>
+            <input type="checkbox" id="flüssig" name="flüssig">
+            <label for="weich">weich</label>
+            <input type="checkbox" id="weich" name="weich">
+            <label for="porös">porös</label>
+            <input type="checkbox" id="porös" name="porös">
+            <label for="dicht">dicht</label>
+            <input type="checkbox" id="dicht" name="dicht">
+            <input type="text"><input type="checkbox" name="andere" value="andere"><br>
+            https://gpu.gallery/index.html
+            https://summhaus.bnag.cc/
+            https://weatheringwithme.com/
+            <a target="_blank" href="https://web.archive.org/web/20240108222752/http://lynnecarty.info/">lynnecarty.info</a>, <a target="_blank" href="https://web.archive.org/web/20230809192528/https://the-life-and-death-of-an-internet-onion.com/">the-life-and-death-of-an-internet-onion.com (archived)</a>, <a href="https://fan.group/">fan.group</a>
+        </div>
+
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="chaos">... chaotisch?</label>
+            <input type="checkbox" name="chaos" id="chaos">
+
+            <label for="struktur">... strukturiert?</label>
+            <input type="checkbox" name="struktur" id="struktur"><br>
+            <a target="_blank" href="https://digitallovelanguages.github.io/">digitallovelanguages.github.io</a>, <a target="_blank" href="https://gardenblues.net/">gardenblues.net</a>
+        </div>
+
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="offen">... offen?</label>
+            <input type="checkbox" name="offen" id="offen">
+
+            <label for="zu">... verschlossen?</label>
+            <input type="checkbox" name="zu" id="zu"><br>
+            <a target="_blank" href="https://virtual.windchime.world/">virtual.windchime.world</a>
+        </div>
+
+        <div class="checkContainer">
+            <legend>Ist es eher...</legend>
+            <label for="linear">... linear?</label>
+            <input type="checkbox" name="linear" id="linear">
+
+            <label for="verworren">... verworren?</label>
+            <input type="checkbox" name="verworren" id="verworren">
+
+            <label for="schachtelt">... verschachtelt?</label>
+            <input type="checkbox" name="schachtelt" id="schachtelt"><br>
+
+            layered
+            https://www.are.na/block/27994222
+
+            https://c0da.org/
+            http://rmo.zkm.de/vasulka-pdf/#137
+            https://tdingsun.github.io/ivy/
+            <a target="_blank" href="https://page-not-found.nl/">page-not-found.nl</a>, <a target="_blank" href="https://diagram.website/">diagram.website/</a>
+        </div>
+      
+        <input type="submit" value="print" onclick="window.print();">
+    </form>
+
+    <hr>
+
+    <div id="diagramme">
+        <p>
+            Male eine 2- oder 3-dimensionale Repräsentation deiner Inhalte als
+            Bild. Du kannst dich an einem Zeitstrahl, eine Karte, Flocharts, Tor-
+            tendiagrammen oder anderen Formaten orientieren oder ganz frei daran
+            herangehen
+        </p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+
+</body>
+</html>

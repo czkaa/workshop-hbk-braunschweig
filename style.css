@@ -180,54 +180,9 @@ td {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-option, input {
-  color: rgb(120,120,120);
-} 
 
-form {
-  width: 50%;
-  font-size: 1.5rem;
-  line-height: 1.35; 
-}
 
-input:focus {
-  outline: none;
-}
-
-input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none; /* For Safari */
-  width: 1.5rem; /* Adjust size */
-  height: 1.5rem; /* Adjust size */
-  border: 1px solid var(--primary-color);
-  border-radius: 50%; /* Makes it a circle */
-  outline: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  height: 2;
-}
-
-input[type="radio"]:checked {
-  background-color: var(--primary-color);
-}
-
-input[type=text] {
-  height: 1.75rem;
-  margin-top: -2px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  width: 100%;
-  border-radius: 100rem;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-}
-
-input[type=radio] {
-  margin:0;
-  transform: translateY(0.15rem);
-}
-
-#other-field {
+/* #other-field {
   opacity: 0;
   margin-top: 10px;
 }
@@ -239,4 +194,4 @@ input[type=radio] {
 
 label:has( > #something_else:checked) + #other-field {
   opacity: 1;
-}
+} */
