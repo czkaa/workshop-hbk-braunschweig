@@ -8,20 +8,37 @@ h1 {
     margin-bottom: 5rem;
 }
 
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+a:hover {
+    font-style: italic;
+}
+
+pre {
+    width: fit-content;
+    margin: 0;
+}
+
 code {
-    /* background: silver; */
     letter-spacing: 0.1em;
     font-family: Times Dot;
-    /* border: 1px solid black; */
     background: lightgray;
     display: inline-block;
     max-width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     overflow: hidden;
     overflow-x: auto;
-    transform: translateY(0.25rem);   
-    padding: 0.2rem 0.2rem 0 0.2rem ;   
-    color: rgb(39, 39, 39);   
+    transform: translateY(0.25rem);
+    padding: 0.2rem 0.2rem 0 0.2rem ;
+    color: rgb(39, 39, 39);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 0;
 }
 
 main {
@@ -33,40 +50,6 @@ main {
 
 section {
     margin-bottom: 5rem;
-}
-
-.task {
-    background-color: yellow;
-}
-
-video, iframe {
-    max-width: 80%;
-    margin: 3rem auto;
-    display: block;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-table {
-    border-spacing: 0;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    width: 100%;
-    font-size: 1.3rem;
-}
-th, td {
-    padding: 0.25rem;
-    text-align: center;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: -0.5px;
-}
-a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
-a:hover {
-    font-style: italic;
 }
 
 nav {
@@ -86,10 +69,12 @@ nav ul {
     justify-content: center;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    height: 0;
+video, iframe {
+    max-width: 80%;
+    margin: 3rem auto;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 img {
@@ -97,24 +82,24 @@ img {
     margin: auto;
     max-width: 60%;
 }
-.two {
-    max-width: 40%;
-}
-pre {
-    width: fit-content;
-    /* background-color: yellow; */
-    margin: 0;
-}
+
 table {
+    border-spacing: 0;
     border-collapse: collapse;
     border: 1px solid black;
-    max-width: 70vw;
+    max-width: 100%;
+    font-size: 1.2rem;
 }
+
 th,
 td {
+    padding: 0.25rem;
+    text-align: center;
     border: 1px solid black;
+    margin: -0.5px;
     padding: 1vw;
 }
+
 td:has(pre) {
     background-color: yellow;
     text-align: left;
@@ -131,4 +116,12 @@ li ul li {
 }
 li ul {
     padding-inline: 3vw;
+}
+
+.two {
+    max-width: 40%;
+}
+
+.task {
+    background-color: yellow;
 }
