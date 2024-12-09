@@ -54,6 +54,8 @@ ol {
             position: fixed;
             bottom: 1rem;
             right: 1rem;
+            color: var(--font-color);
+            background-color: transparent;
         }
 
         textarea {
