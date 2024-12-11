@@ -11,13 +11,18 @@
     <header>
         <nav>
             <ul>
-                <li></li>
+                <li><a href="#html">Text in HTML</a></li>
+                <li><a href="#letter">Buchstabe</a></li>
+                <li><a href="#word">Wort</a></li>
+                <li><a href="#sentence">Satz</a></li>
+                <li><a href="#paragraph">Absatz</a></li>
             </ul>
         </nav>
     </header>
 
     <main style="max-width: 70vw; margin: auto; gap: 1rem; display: flex; flex-direction: column; padding: 1rem">
         <section id="html">
+            <h1>Text in HTML</h1>
             <table>
                 <thead>
                     <tr>
@@ -47,7 +52,7 @@
                         <td colspan="2">Text innere (styling) Elemente <code>inline</code></td>
                     </tr>
                     <tr>
-                        <td>&lt;b&gt;&lt;b&gt;</td>
+                        <td><pre>&lt;b&gt;&lt;b&gt;</pre></td>
                         <td>bold text</td>
                     </tr>
                     <tr>
@@ -74,27 +79,55 @@
             </table>
         </section>
         <section id="letter">
-            <p>default fonts:</p>
+            <h1>Buchstabe</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>aktion</th>
+                        <th>CSS property</th>
+                        <th>Beispiele</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ändere Font</td>
+                        <td>font-family</td>
+                        <td>default fonts:
+                        <pre>font-family: serif;
+            sans-serif;
+            monospaced;</pre>
+                        oder eine spezifische:
+                        <pre>font-family: "fontname";</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>füge externe Font hinzu</td>
+                        <td>@font-face { }</td>
+                        <td><pre>@fontface {
+    font-family: "fontname";
+    src: url("/fonts/file.woff2") format("woff2");
+}</pre></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>font size:</p>
             <pre>
-font-family: serif;
-             sans-serif;
-             monospaced;
+font-size: 12px;
+           1vw;
             </pre>
-            <p>embedding fonts:</p>
-            <pre>
-                @fontface {
-                    font-family: "fontname";
-                    src: url("/fonts/file.woff2") format("woff2");
-                }
-            </pre>
+            <p class="task">Öffne ein neues HTML Dokument und tippe einen Buchstaben. Benutze die bis hierhin besporchenen HTML und CSS properties und überlege: welchen Charakter hat er? eher plakativ und laut? oder zart, spitz oder schnell?</p>
         </section>
         <section id="word">
+            <h1>Wort</h1>
 
         </section>
         <section id="sentence">
+            <h1>Satz</h1>
 
         </section>
         <section id="paragraph">
+            <h1>Absatz</h1>
 
         </section>
     </main>
