@@ -47,6 +47,10 @@ p > code {
     margin-bottom: 0;
 }
 
+td > code {
+    margin-bottom: 0;
+}
+
 header {
     position: sticky;
     height: 0;
