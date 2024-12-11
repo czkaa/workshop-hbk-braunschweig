@@ -26,6 +26,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr><td colspan="2">Text container Elemente <code>block</code></td></tr>
                     <tr>
                         <td><pre>&lt;p&gt;&lt;/p&gt;</pre></td>
                         <td></td>
@@ -43,7 +44,7 @@
                         <td>Preformatted Text (wird genau so gerendert wie im Text editor gesetzt)</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Text styling mit html <code>inline</code></td>
+                        <td colspan="2">Text innere (styling) Elemente <code>inline</code></td>
                     </tr>
                     <tr>
                         <td>&lt;b&gt;&lt;b&gt;</td>
@@ -65,11 +66,27 @@
                         <td><pre>&lt;sup&gt;&lt;sup&gt;</pre></td>
                         <td>hochgestellt (super)</td>
                     </tr>
+                    <tr>
+                        <td><pre>&lt;mark&gt;&lt;makr&gt;</pre></td>
+                        <td>highlighted text</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
         <section id="letter">
-
+            <p>default fonts:</p>
+            <pre>
+font-family: serif;
+             sans-serif;
+             monospaced;
+            </pre>
+            <p>embedding fonts:</p>
+            <pre>
+                @fontface {
+                    font-family: "fontname";
+                    src: url("/fonts/file.woff2") format("woff2");
+                }
+            </pre>
         </section>
         <section id="word">
 
