@@ -10,6 +10,7 @@
 <body>
     <header>
         <nav>
+            <p>Inhalt</p>
             <ul>
                 <li><a href="#html">Text in HTML</a></li>
                 <li><a href="#letter">Buchstabe</a></li>
@@ -34,7 +35,7 @@
                     <tr><td colspan="2">Text container Elemente <code>block</code></td></tr>
                     <tr>
                         <td><pre>&lt;p&gt;&lt;/p&gt;</pre></td>
-                        <td></td>
+                        <td>Text (paragraph)</td>
                     </tr>
                     <tr>
                         <td><pre>&lt;h1&gt;&lt;/h1&gt;</pre></td>
@@ -85,7 +86,7 @@
                     <tr>
                         <th>aktion</th>
                         <th>CSS property</th>
-                        <th>Beispiele</th>
+                        <th>Beispiel</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -95,7 +96,9 @@
                         <td>default fonts:
                         <pre>font-family: serif;
             sans-serif;
-            monospaced;</pre>
+            monospaced;
+            fantasy;
+            cursive;</pre>
                         oder eine spezifische:
                         <pre>font-family: "fontname";</pre>
                         </td>
@@ -108,27 +111,115 @@
     src: url("/fonts/file.woff2") format("woff2");
 }</pre></td>
                     </tr>
+                    <tr>
+                        <td>Schriftgröße</td>
+                        <td>font-size</td>
+                        <td><pre>font-size: 12px;
+           1vw;
+                        </pre></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>font-weight</td>
+                        <td>font-weight: bold;</td>
+                    </tr>
+                    <tr>
+                        <td>Klein-/ Großbuchstaben</td>
+                        <td>text-transform</td>
+                        <td>text-transform: uppercase;</td>
+                    </tr>
                 </tbody>
             </table>
 
-            <p>font size:</p>
-            <pre>
-font-size: 12px;
-           1vw;
-            </pre>
-            <p class="task">Öffne ein neues HTML Dokument und tippe einen Buchstaben. Benutze die bis hierhin besporchenen HTML und CSS properties und überlege: welchen Charakter hat er? eher plakativ und laut? oder zart, spitz oder schnell?</p>
+            <p class="task">Öffne ein neues HTML Dokument und tippe einen Buchstaben. Benutze die bis hierhin besprochenen HTML und CSS properties und überlege: welchen Charakter hat er? eher plakativ und laut? oder zart, spitz oder schnell?</p>
         </section>
         <section id="word">
             <h1>Wort</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>aktion</th>
+                        <th>CSS property</th>
+                        <th>Beispiel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Text Ausrichtung</td>
+                        <td>text-align</td>
+                    </tr>
+                    <tr>
+                        <td>text-decoration</td>
+                    </tr>
+                    <tr>
+                        <td>letter-spacing</td>
+                    </tr>
+                    <tr>
+                        <td>text-orientation</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </section>
         <section id="sentence">
             <h1>Satz</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>aktion</th>
+                        <th>CSS property</th>
+                        <th>Beispiel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>word-spacing</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </section>
         <section id="paragraph">
             <h1>Absatz</h1>
-
+            <table>
+                <thead>
+                    <tr>
+                        <th>aktion</th>
+                        <th>CSS property</th>
+                        <th>Beispiel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zeilenabstand</td>
+                        <td>line-height</td>
+                    </tr>
+                    <tr>
+                        <td>text-indent</td>
+                    </tr>
+                    <tr>
+                        <td>text-overflow</td>
+                    </tr>
+                    <tr>
+                        <td>whitespace</td>
+                    </tr>
+                    <tr>
+                        <td>word-break</td>
+                    </tr>
+                    <tr>
+                        <td>overflow-wrap</td>
+                    </tr>
+                    <tr>
+                        <td>hyphens</td>
+                    </tr>
+                    <tr>
+                        <td>text-align-last</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 </body>
