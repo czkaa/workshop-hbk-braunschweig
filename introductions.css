@@ -28,19 +28,26 @@ p {
     margin: 1vh 0;
 }
 
+pre {
+    width: 100%;
+}
+
 code {
     letter-spacing: 0.1em;
-    font-family: Times Dot;
-    background: lightgray;
+    background: yellow;
     display: inline-block;
     max-width: 100%;
     font-size: 1.2rem;
     overflow: hidden;
     overflow-x: auto;
     transform: translateY(0.25rem);
-    padding: 0.2rem 0.2rem 0 0.2rem ;
+    padding: 0.2rem 1rem;
     color: rgb(39, 39, 39);
     margin-bottom: 2vh;
+}
+
+code code {
+    background: w;
 }
 
 p > code {
@@ -61,12 +68,7 @@ main {
     padding: 1rem;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15rem;
-}
+
 
 nav {
     border: 1px solid black;
@@ -77,19 +79,7 @@ nav {
     padding: 3rem;
 }
 
-nav ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-    max-width: 100%;
-}
-
 video, iframe {
-    max-width: 80%;
     margin: 3rem auto;
     display: block;
     width: 100%;
@@ -112,36 +102,31 @@ img {
     display: block;
     margin: auto;
     max-width: 60%;
+    margin-top: 1rem;
 }
 
 figcaption {
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
 }
 
 
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-    border: 1px solid black;
-    max-width: 100%;
-    font-size: 1.2rem;
-    margin-bottom: 5vh;
-}
 
-th,
-td {
-    padding: 0.25rem;
-    text-align: center;
-    border: 1px solid black;
-    margin: -0.5px;
-    padding: 1vw;
-}
 
 td:has(pre) {
     background-color: yellow;
     text-align: left;
+}
+
+tr td:first-child {
+    font-family: monospace;
+    background-color: yellow;
+}
+
+th {
+    font-weight: normal;
 }
 
 /* ul li {
@@ -163,10 +148,9 @@ li ul {
 ul {
     text-align: left;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     list-style-type: disc;
-    padding-left: 2rem;
-    max-width: 80%;
+    width: 100%;
 }
 
 ul, ul li {
@@ -186,8 +170,4 @@ li > ul {
 
 li ul li {
     list-style-type: circle;
-}
-
-.task {
-    background-color: yellow;
 }

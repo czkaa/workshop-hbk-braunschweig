@@ -31,13 +31,6 @@ textarea {
     margin-top: 0.5rem;
 }
 
-hr {
-    width: 100vw;
-    margin: 3rem 0;
-}
-a {
-    color: blue;
-}
 
 #diagramme {
     display: flex;

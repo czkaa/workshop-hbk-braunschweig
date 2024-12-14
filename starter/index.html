@@ -1,0 +1,77 @@
+<!-- Meta Information für den Browser -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Starterkit</title> <!-- Titel der Website (erscheint in der Tableiste) -->
+
+    <!-- verweist auf ein CSS Styleheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<!-- Website Inhalte <body> -->
+<body>
+    <!-- Überschrift/ Titel -->
+     <header>
+
+     </header>
+    <h1>Starterkit</h1>
+
+    <!-- Navigation -->
+    <nav>
+        <ul><!-- Listen Container -->
+            <li><!-- Listen Element -->
+                <a href="#intro">Intro-Section</a> <!-- Hyperlink zu der section #intro -->
+            </li>
+            <li><a href="#video-section">Video-Section</a></li>
+            <li><a href="#audio-section">Audio-Section</a></li>
+            <li><a href="#bilder-section">Bilder-Section</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Unterteilung d. Inhalte in Sektionen/ Kapitel zwischen denen wir dann hin und her springen können -->
+        <section id="intro">
+            <!-- ein text paragraph -->
+            <p>HTML steht für Hypertext Markup Language</p>
+            <p>HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern interpretiert.</p>
+            <p>HTML wird zur Strukturierung elektronischer Dokumente (Texte mit Hyperlinks, Bilder, Videos...) verwendet. Für
+                die Formatierung und visuelle Darstellung benutzen wir CSS.</p>
+                LLinks
+        </section>
+        
+        <section id="video-section">
+
+            <!-- Video aus den lokalen Dateien -->
+            <caption>Video-Untertitel</caption>
+        
+            <video controls href=""></video>
+            <caption>Untertitel <a href="#footnote-1">(1)</a></caption>
+        
+        
+        </section>
+        
+        <section id="audio-section">
+            <audio controls src="./assets/audio/test.mp3"></audio>
+            <caption>Audio-Untertitel <a href="#footnote-2">(2)</a></caption>
+        </section>
+        
+        <section id="bilder-section">
+            <img alt="Beispielbild" src="./assets/img/test.png"/>
+            <caption>Bild-Untertitel <a href="#footnote-3">(3)</a></caption>
+        </section>
+    </main>
+
+    <footer>
+        <a href="/#intro-section">Back to Top</a>
+    </footer>
+
+    <!-- verweist auf eine Javascript-Datei -->
+    <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>

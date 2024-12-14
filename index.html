@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>My website ist a ... – Workshop HBK Braunschweig</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="briefing.css">
-    <link rel="stylesheet" href="form.css">
 
-    <title>Vortreffen – My Website Is ...</title>
+
 </head>
+
 <body>
     <header>
         <div class="header__info">
             <span>Workshop HBK Braunschweig</span>
+            
+            <nav>
+                <ul>
+                    <li><a href="#uebersicht">Übersicht</a></li>
+                    <li><a href="#vortreffen">Vortreffen</a></li>
+                    <li><a href="#montag">Montag</a></li>
+                    <!-- <li><a href="#dienstag">Tag 2</a></li>
+                    <li><a href="#mittwoch">Tag 3</a></li>
+                    <li><a href="#donnerstag">Tag 4</a></li>
+                    <li><a href="#freitag">Tag 5</a></li> -->
+                    <li><a href="#glossar">Glossar</a></li>
+                    <li><a href="#library">Library</a></li>
+                </ul>
+            </nav>
+            
+            <a id="toplink" href="#top">back to top</a>
+
             <span>16.–20. Dezember 2024</span>
-        </div>
+        </div>    
+    </header>
+
+  
+    <main>
         <h1>My website is a ...</h1>
-       
+
         <form autocomplete="off">
             <div class="hero__list">
                 <label><input type="radio" id="spiral" name="shape"> spiral</label>
@@ -26,74 +49,140 @@
                 <label><input type="radio" id="parallelogram" name="shape"> parallelogram</label>
                 <label><input type="radio" id="building" name="shape"> timeline</label>
                 <label><input type="radio" id="highway" name="shape"> blob</label>
-        
+
                 <label><input type="radio" id="something_else" name="shape"> something else</label>
                 <div id="other-field">
                     <input spellcheck="false" type="text" id="other-shape" name="other-shape" placeholder="">
                 </div>
             </div>
         </form>
-    </header>
 
-    <main>
-
-        <section>
-
-            <p class="quote">
-                „My favorite aspect of websites is their duality: they’re both subject and object at once. In other words, a website creator becomes both author and architect simultaneously. There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle? Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.“
-                
-                <div class="quote__source"><a
-                        href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"
-                        target="_blank">My Website is a Shifting House Next to a River of Knowledge,</a><br>Laurel Schwulst
-                </div>
-            
-            </p>
-
+        <section id="uebersicht">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="time"></th>
+                        <th>Mon</th>
+                        <th>Di</th>
+                        <th>Mi</th>
+                        <th>Do</th>
+                        <th>Fr</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10–12:00</td>
+                        <td>Einführung<br>Präsentationen</td>
+                        <td>Check-In, CSS-Intro</td>
+                        <td>Check-In, JS-Intro</td>
+                        <td>Check-In, Vorstellung</td>
+                        <td>Check-In, Collective Coding</td>
+                    </tr>
+                    <tr>
+                        <td class="time">13–15:00</td>
+                        <td>HTML-Intro</td>
+                        <td>Collective Coding</td>
+                        <td>Collective Coding</td>
+                        <td>Collective Coding</td>
+                        <td>Collective Coding</td>
+                    </tr>
+                    <tr>
+                        <td class="time">15–17:30 </td>
+                        <td>Ideas for a Website</td>
+                        <td>Collective Coding</td>
+                        <td>Collective Coding, Stand zeigen</td>
+                        <td>Collective Coding</td>
+                        <td>Ausstellung</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-      
+
+
+        <section id="vortreffen">
+            <h2><a href="/vortreffen.html">Vortreffen</a>  <br>(10.12.24)</h2>
+        </section>
+
         
-        <section>
-            <p>
-                In der kommenden Woche möchten wir gemeinsam herausfinden, wie wir ausgehend von einer kleinen Sammlung an Inhalten ein individuelles Konzept für eine Webseite entwickeln. Ausgangspunkt ist dabei das Material und die Filmarbeit, welches ihr über das Semester produziert habt. Ziel des Kurses ist es, zum Ende der Woche eine Webseite für diese Inhalte zu programmieren. Im Zuge dessen geben wir eine grundlegende Einführung in HTML, CSS und Javascript sowie kürzere, themenbasierte Inputs. Zwischendurch legen wir immer wieder Pausen zum Ausprobieren, Üben und Experimentieren der gelernten Schritte ein.
-            </p>
+        
+        <section id="montag">
+            <h2>Montag <br>(16.12.24)</h2>
+            <a href="/html.html">HTML-Intro</a>
+
+            <p class="task">Ausgehend vom Fragebogen, entwickle drei kleine Konzepte für je eine Webseite. Das Konzept kann sich auf Interaktion, Gestaltung, Struktur etc. beziehen. Gehe von dem aus, was dich selbst interessiert und zu deinen Inhalten passt. Mache gern schon eine erste Skizze auf Papier.</p>
         </section>
 
-        <section>
-            <ul>
-                <li>Was möchtest du im Kurs lernen?</li><!-- Hast du konkrete Vorstellungen, was du gerne aus dem Workshop mitnehmen würdest? -->
-                <li>Wie ist deine persönliche Beziehung zu Webseiten?</li><!-- Wie oft interagierst du mit Webseiten? (selten, manchmal, häufig) Und wo? (auf dem Computer, Handy, über andere Plattformen wie Soziale Medien)-->
-                <li>Hast du schon mal programmiert? Wenn ja, was?</li><!-- Welche Programmiersprachen hast du dafür benutzt? Das hat sich (aufregend, frustrierend, einfach, kompliziert...) angefühlt-->
-                <li>Gibt es einen Schwerpunkt in deinem vorbereiteten Material: Text/Bild/Sound/Gespräche/vorgefundene Texte/Videos/...?</li><!-- die frage finde ich konkret genug -->
-            </ul>
+        <section id="dienstag">
+            <h2>Dienstag <br>(17.12.24)</h2>
         </section>
 
-        <section>
-            <h2>zu Montag 16.12.</h2>
-            <p>Bereite bitte Folgendes vor, damit wir kommenden Montag gut gemeinsam starten können:</p>
-            <ul>
-                <li>Die Inhalte, die du auf deiner Webseite präsentieren möchtest:
-                    <ul>
-                        <li>Titel der Arbeit, ggf. Untertitel</li>
-                        <li>Eine kurze Beschreibung des Konzepts/des Inhalts deines Films (2-3 Sätze)</li>
-                        <li>Material aus deiner Recherche
-                            <ul>
-                                <li>
-                                    Texte oder Textauszüge als Text-Dateien, in Form von PDF oder als Links, je nachdem, wie du sie vorgefunden oder damit gearbeitet hast. Wenn du die Texte nicht selbst gescrhieben hast, immer auch eine Quellenangabe
-                                </li>
-                                <li>Andere Medien wie Bilder, Sound, Videos, Screenshots jeweils mit kurzem Untertitel/kurzer Beschreibung. Auch hier Quellenangaben dort, wo das Material nicht von dir stammt.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    Wenn du etwas zeigen möchtest, was noch nicht fertig ist, bereite entsprechende Platzhalterinhalte vor
-                </li>
-                <li>Um verschiedene Zugänge zu eurem Material zu finden, haben wir einen  <a href="https://czkaa.github.io/workshop-hbk-braunschweig/fragebogen.html" target="_blank">Fragebogen</a> vorbereitet. Du kannst ihn digital oder ausgedruckt bearbeiten.
-                <li>Damit wir alle auf einem Stand sind, möchten wir euch bitten, eine kleine Präsentation (ca. 5 Minuten)vorzubereiten, in welcher ihr euren Film kurz vorstellt oder einen Ausschnitt zeigt, und einen Überblick über euer Material für die Webseite gebt. Außerdem könnt ihr euch gegenseitig zeigen, wie ihr den Fragebogen beantwortet habt bzw. welche Fragen ihr gut beantworten konnten. </li>
-                <li>Wenn du noch keinen Code Editor installiert hat, installiere bis Montag einen Editor deiner Wahl . Wir benutzen gerne „Visual Studio Code“; einen Download Link dafür findest du <a target="_blank" href="https://code.visualstudio.com/Download">hier</a>.</li>
-            </ul>
+        <section id="mittwoch">
+            <h2>Mittwoch <br>(18.12.24)</h2>
         </section>
-        <section>
-            <p>Wenn du vor dem Workshop Fragen oder Anmerkungen (zum Vortreffen, Ablauf, ...) hast, schreib uns gerne eine Mail: <a href="mailto:mail@kimkleinert.com">Kim</a>, <a href="mailto:karen.czock@posteo.de">Karen</a>.</p>
+
+        <section id="donnerstag">
+            <h2>Donnerstag <br>(19.12.24)</h2>
+        </section>
+
+        <section id="freitag">
+            <h2>Freitag <br>(20.12.24)</h2>
+        </section>
+
+
+        
+        <section id="glossar">
+            <details>
+                <summary>HTML</summary>
+                <p><b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</p>
+            </details>
+            <details>
+                <summary>CSS</summary>
+                <p><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</p>
+            </details>
+            <details>
+                <summary>Java Script</summary>
+                <p></p>
+            </details>
+            <details>
+                <summary>Website</summary>
+                <p>a file or a bundle of files that work in web browser. Often a website is living on a server
+                    somewhere. <a href="https://veryinteractive.net/pages/vocabulary.html">(from Laurel)</a></p>
+            </details>
+            <details>
+                <summary>Server</summary>
+                <p></p>
+            </details>
+            <details>
+                <summary>Cursor</summary>
+                <p></p>
+            </details>
+            <details>
+                <summary>Code Editor</summary>
+                <p></p>
+            </details>
+        </section>
+
+
+        <section id="library" class="material">
+            <h2>Text</h2>
+            <ul>
+                <li><a href="http://luckysoap.com/statements/handmadeweb.html">A Handmade Web by J. R. Carpenter</a></li>
+                <li><a
+                        href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">My
+                        website is a shifting house next to a river of knowledge. What could yours be? Laurel
+                        Schwulst</a></li>
+                <li><a href="https://theusercondition.computer/">The User Condition by Silvio Lorusso</a></li>
+                <li><a href="https://gist.github.com/melaniehoff/95ca90df7ca47761dc3d3d58fead22d4">Always Already
+                        Programming by Melanie Hoff</a></li>
+                <li><a href="https://ambient.institute/domain-naming/">Domain Naming by Chia Amisola</a></li>
+                <li><a href="https://abcglossary.xyz/">ABC A glossary for an anti-colonial Black feminist critical
+                        media ecology</a></li>
+                <li><a href="https://www.ourfriendthe.computer/">Our friend the Computer</a> (alternative computer
+                    histories)</li>
+            </ul>
+        
         </section>
     </main>
 </body>
+
 </html>
