@@ -25,11 +25,11 @@
             <h1>Was ist CSS?</h1>
             <p>Regeln, die das Aussehen einer Webseite beschreiben</p>
             <figure>
-                <img src="/assets/img/unmöbeliert.jpg" alt="">
+                <img src="/assets/img/unmöbeliert.jpg" alt="Ein unmöbelierter Raum mit vielen offenen Türen und weißen Wänden.">
                 <figcaption>HTML: Struktur, Gerüst</figcaption>
             </figure>
             <figure>
-                <img src="/assets/img/möbeliert.webp" alt="">
+                <img src="/assets/img/möbeliert.webp" alt="Ein gemütlicher Raum mit Teppich, bunten Möbel Stücken und Sesseln davor.">
                 <figcaption>CSS: Gestaltung, Einrichtung</figcaption>
             </figure>
         </section>
@@ -38,12 +38,12 @@
         <section id="wie">
             <h1>Wie schreibe ich CSS?</h1>
             <figure>
-                <img src="/assets/img/css-01.png" alt="">
+                <img src="/assets/img/css-01.png" alt="Text CSS Syntax.">
                 <figcaption>Einzelne Bestandteile</figcaption>
             </figure>
 
             <figure>
-                <img src="/assets/img/css-02.png" alt="">
+                <img src="/assets/img/css-02.png" alt="Text CSS Satzzeichen.">
                 <figcaption>Satzzeichen</figcaption>
             </figure>
         </section>
@@ -376,7 +376,7 @@ column-width: 45%;</pre>
             <h2>Übung 1: CSS Takeover</h2>
 
             <p class="task">
-                Öffne eine Seite, auf der du dich häufig aufhälst, im Browser. Drücke <code>Option + ⌘ + I</code> (Mac) oder <code>Srg + I</code> (Windows), um den Inspektor zu öffnen. Verändere das CSS der Seite, bis sie dir besser gefällt. Achtung: Wenn du die Seite neu lädst, gehen deine Änderungen verloren!
+                Öffne eine Webeite, auf der du dich häufig aufhälst, im Browser. Drücke <code>Option + ⌘ + I</code> (Mac) oder <code>Srg + I</code> (Windows), um den Inspektor zu öffnen. <br>Verändere das CSS der Seite, bis sie dir besser gefällt. Achtung: Wenn du die Seite neu lädst, gehen deine Änderungen verloren!
             </p>
                <!-- 
                 1. ..
@@ -433,37 +433,38 @@ column-width: 45%;</pre>
 
         <section id="eigen">
             <h1>Eigenheiten:</h1>
-            <p><i><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</i></p>
+            <p>CSS steht für <i><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</i></p>
             <p>cascading?</p>
             <figure>
-                <img src="/assets/video/cascading.gif" alt="">
+                <img src="/assets/video/cascading.gif" alt="Animiertes GIF eines strömenden Wasserfalls, umgeben von grünem Wald.">
                 <figcaption>"Cascading"(en) für "herabstürzen", "hintereinanderschalten", "etw. nach unten weitergeben"</figcaption>
             </figure>
 
-            <img src="/assets/img/css-04.png" alt="">
+            <img src="/assets/img/css-04.png" alt="Drei Flächen überlagern sich.">
 
         </section>
 
         <section>
-            <p>"deklarativ" (eine Liste mit Regeln)</p>
+            <p>CSS ist <i>deklarativ</i> (eine Liste mit Regeln)</p>
 
-            <p>warum ist das so anders als Gestaltung für Print?</p>
-            <ul>
-                <li>Design für print: Designer*in kann jeden Schritt des Prozesses kontrollieren (material, layout, größe) und es wird genau wie geplant bei Benutzer*innen ankommen.</li>
-                <li>Benutzer*in kontrolliert wie Inhalte dargestellt werden (default Einstellungen, Browser Wahl, Gerät, Größe…)
-                    <ul>
-                        <li>Designen für Unbekanntes, Veränderung, Anpassung </li>
-                        <li>Designer*innen kontrollieren nicht mehr das Ergebnis sondern suggerieren (schlagen vor), deswegen ist CSS eine "deklarative" (vorschlagende, erklährende) Sprache</li>
-                    </ul>
-                </li>
-            </ul>
+            <p>Warum funktioniert das so anders als Gestaltung für Print?</p>
+            <figure>
+                <img src="/assets/img/cssvsstatic.png" alt="Buch = Buch, Website = Handy, Tablet, PC">
+                <figcaption>Design für print (Indesign etc): Designer*in kann jeden Schritt des Prozesses entscheiden, Design für Web (CSS): Benutzer*in entscheiden wie Inhalte dargestellt werden.</figcaption>
+            </figure>
         </section>
 
         <section id="uebung-2">
-            <h2>Übung 2: Stilleben / ?</h2>
+            <h2>Übung 2: Stilleben</h2>
 
             <p class="task">
-                ?
+                Setup: <br>
+                Erstelle einen neuen Ordner auf deinem Computer und öffne ihn mit deinem Code Editor. Im Code Editor erstelle ein neues Dokument z.B. <code>"stilleben.html"</code>.
+                <br>Jetzt brauchen wir noch einen Ort für das CSS. Erstelle ein zweites Dokument im Gleichen Ordner, z.B. <code>"style.css"</code>. Verlinke das CSS im HTML <code>&lt;head&gt;</code>, Nutze dafür die oben erklärte Methode "external".
+                <br>
+                Übung: <br>
+                In dieser Übung wollen wir ein Stilleben programmieren, also malen, aber statt Stiften und Papier verwenden wir nur HTML und CSS. <br>
+                Du kannst Formen, Farben und Details abstrahieren oder hervorheben ... Nutze das Stilleben als Ausgangspunkt.
             </p>
                <!-- 
                 1. ..
@@ -472,16 +473,14 @@ column-width: 45%;</pre>
 
 
 
-        <section id="uebung-2">
+        <!-- <section id="uebung-2">
             <h2>Übung 3: Setup</h2>
 
             <p class="task">
                 Gemeinsam legen wir ein Stylesheet für deine Webseite an.
             </p>
-               <!-- 
-                1. ..
-                -->
-        </section>
+        
+        </section> -->
 
     </main>
 </body>
