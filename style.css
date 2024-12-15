@@ -44,7 +44,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 h3 {
@@ -233,7 +232,7 @@ label:has(> #something_else:checked)+#other-field {
   background-color: rgb(255, 164, 241);
   padding: 0.25rem 0.5rem;
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 table {
