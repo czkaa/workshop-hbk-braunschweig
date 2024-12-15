@@ -165,6 +165,7 @@ li ul li {
 .reset h2 {
     font-size: 25px;
     font-weight: bolder;
+    text-align: left;
 }
 
 .reset a {
