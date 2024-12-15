@@ -15,27 +15,24 @@
 
 <body>
 
-    <!-- <header>
-        <nav>
-            <ul>
-                <h2>Inhalt</h2>
+    <nav>
+        <ul>    
+            <li><a href="#was-ist-eine-webseite">Was ist eine <br>Webseite?</a></li>
+            <li><a href="#was-ist-html">Was ist HTML?</a></li>
+            <li><a href="#grundstruktur">Grundstruktur eines <br>HTML-Dokuments</a></li>
+            <li><a href="#elemente">Elemente</a></li>
+            <li><a href="#uebung-1">HTML-Poetry</a></li>
+            <li><a href="#hinweise">Hinweise</a></li>
+        </ul>
+    </nav>
 
-                <li><a href="#was-ist-html">Was ist HTML</a></li>
-                <li><a href="#grundstruktur">Grundstruktur eines <br>HTML-Dokuments</a></li>
-                <li><a href="#head">Head</a></li>
-                <li><a href="#body">Body</a></li>
-                <li><a href="#uebung-1">Übung-1</a></li>
-                <li><a href="#uebung-2">Übung-2</a></li>
-                <li><a href="#hinweise">Hinweise</a></li>
+    <a id="toplink" href="#top">top</a>
 
-            </ul>
-        </nav>
-    </header> -->
 
     <main>
-        <h1>HTML Einführung</h1>
+        <h1>HTML-Intro</h1>
 
-        <section>
+        <section id="was-ist-eine-webseite">
             
             <h2>1. Was ist eine Webseite? </h2>
             <p>Eine Ansammlung von Dateien auf einem Web-Server</p>
@@ -43,7 +40,7 @@
 
         <section id="was-ist-html">
             <h2>2. Was ist HTML? </h2>
-            <p><i><b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>aguage</i></p>
+            <p><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>aguage</p>
             <p>Die Struktur einer Webseite; human-readable Text, der von einem Web-Browser interpretiert wird</p>
 
             <figure>
@@ -63,6 +60,9 @@
         <section id="grundstruktur">
             <h2>2. Grundstruktur eines HTML-Dokuments</h2>
 
+            <video controls src="/assets/video/head.mp4"></video>
+
+
             <pre><code>
 &lt;!DOCTYPE html&gt;
     &lt;html lang="de"&gt;
@@ -81,14 +81,14 @@
             <p><code>&lt;html lang="de"&gt;</code>: Äußeres mit Spracheinstellung</p>
             <p>Der <code>&lt;head&gt;</code>-Bereich enthält wichtige (Meta-)Informationen über die Seite, wie Titel,
                 Zeichensatz und externe Dateien (z. B. CSS).</p>
-            <video controls src="/assets/video/head.mp4"></video>
         </section>
 
 
-        <section id="body">
+        <section id="elemente">
 
             <h2>3. HTML-Elemente</h2>
 
+            <video controls src="/assets/video/body.mp4"></video>
 
             <p>Der <code>&lt;body&gt;</code>-Bereich enthält den eigentlichen Inhalt der Webseite. Dieser Inhalt wird
                 meisten über HTML-Elemente strukturiert</p>
@@ -116,12 +116,9 @@
             <p>Die Inhalte eines HTML-Dokuments werden von oben nach unten und von links nach rechts angezeigt. Es gibt sogenannte block-Elemente, die 100% der Seitenbreite annehmen. Sogenannte inline-Elemente sind genau so breit wie ihr Inhalt und können deshalb horizontal nebeneinander stehen, wenn genug Platz ist.</p>
         
 
-            
-
-            <video controls src="/assets/video/body.mp4"></video>
 
 
-            <section>
+            <section >
                 <h2>4. Häufige HTML-Elemente</h2>
 
             <table>
@@ -136,51 +133,51 @@
                 <tbody>
                     <tr>
                         <td>&lt;i&gt;&lt;/i&gt;</td>
-                        <td><i>kursiver Text</i></td>
+                        <td class="reset"><i>kursiv</i></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;b&gt;&lt;/b&gt;</td>
-                        <td><b>fetter Text</b></td>
+                        <td class="reset"><b>bold</b></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;s&gt;&lt;/s&gt;</td>
-                        <td><s>durchgetrichener Text</s></td>
+                        <td class="reset"><s>durchgetrichen</s></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;mark&gt;&lt;/mark&gt;</td>
-                        <td><mark>markiert</mark></td>
+                        <td class="reset"><mark>markiert</mark></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;sub&gt;&lt;/sub&gt;</td>
-                        <td><sub>tiefer</sub></td>
+                        <td class="reset"><sub>tiefgestellt</sub></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;h1&gt;&lt;/h1&gt;</td>
-                        <td><h1>große Überschrift</h1></td>
+                        <td class="reset"><h1>große Überschrift</h1></td>
                         <td>inline</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;h2&gt;&lt;/h2&gt;</td>
-                        <td>
-                            <h1>kleinere Überschrift</h1>
+                        <td class="reset">
+                            <h2>kleinere Überschrift</h2>
                         </td>
                         <td>block</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&lt;br&gt</td>
-                        <td>
+                        <td class="reset">
                             Zeilen<br>umbruch
                         </td>
                         <td>block</td>
@@ -188,7 +185,7 @@
                     </tr>
                     <tr>
                         <td>&lt;img src=""&gt;</td>
-                        <td>
+                        <td class="reset">
                             ??
                         </td>
                         <td>inline</td>
@@ -196,7 +193,7 @@
                     </tr>
                     <tr>
                         <td>&lt;a href=""&gt;&lt;/a &gt;</td>
-                        <td>
+                        <td class="reset">
                             <a href="">Link</a>
                         </td>
                         <td>inline</td>
@@ -204,7 +201,7 @@
                     </tr>
                     <tr>
                         <td>&lt;hr&gt;</td>
-                        <td>
+                        <td class="reset">
                             <hr>
                         </td>
                         <td>block</td>
@@ -219,7 +216,8 @@
 &lt;ol&gt;
                             </pre>
                         </td>
-                        <td><ol><li>Punkt</li><li>Punkt</li></ol></td>
+                        <td class="reset"><ol><li>Punkt</li><li>Punkt</li></ol></td>
+                        <td>block</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -231,31 +229,35 @@
 &lt;ul&gt;
                                                 </pre>
                         </td>
-                        <td>
+                        <td class="reset">
                             <ul>
                                 <li>Punkt</li>
                                 <li>Punkt</li>
                             </ul>
                         </td>
                         <td>block</td>
+                        <td></td>
                     </tr>
 
                     <tr>
                         <td>&lt;button&gt;&lt;/button&gt;</td>
-                        <td><button>button</button></td>
+                        <td class="reset"><button>button</button></td>
                         <td>inline</td>
+                        <td></td>
                     </tr>
 
                     <tr>
                         <td>&lt;input type="range"&gt;&lt;/input&gt;</td>
-                        <td><input type="range"></td>
+                        <td class="reset"><input type="range"></td>
                         <td>block</td>
+                        <td></td>
                     </tr>
 
                     <tr>
                         <td>&lt;textarea&gt;&lt;/textarea&gt;</td>
-                        <td><textarea></textarea></td>
+                        <td class="reset"><textarea></textarea></td>
                         <td>block</td>
+                        <td></td>
                     </tr>
 
                     <tr>
@@ -270,7 +272,7 @@
                             </pre>
                         </td>
                        
-                        <td>
+                        <td class="reset">
                            <select>
                                 <optgroup label="Option Group">
                                     <option>A</option>
@@ -280,10 +282,11 @@
                            </select>
                            
                         <td>block</td>
+                        <td></td>
                     </tr>
 
                     <tr>
-                        <td>
+                        <td class="reset">
                             <pre>
 &lt;summry&gt;
     &lt;details&gt;&lt;/detailsp&gt;
@@ -291,13 +294,14 @@
                             </pre>
                         </td>
 
-                        <td>
+                        <td class="reset">
                             <summary>
                                 Sichbarer Text
                                 <details>Ausgeklappter text</details>
                             </summary>
 
                         <td>block</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table> 
@@ -306,19 +310,19 @@
 
         </section>
 
-        <section id="uebung-2">
+        <section id="uebung">
             <h2>Übung 1: HTML Poetry</h2>
 
             <p class="task">
                 Wähle einen Text oder Textausschnitt aus einem Material aus. Der Text sollte nicht zu lang sein.
-                Illustriere den Text mittels HTML-Elementen aus <a href="https://htmlreference.io/"
+                Illustriere den Text mittels HTML-Elementen aus der Liste oben oder <a href="https://htmlreference.io/"
                     target="_blank">dieser Liste</a>.
                 Wenn du fertig bist, schau ihn dir in unterschiedlichen Browsern an!
             </p>
         </section>
 
         <section id="hinweise">
-             <h2>Tips</h2>
+             <h2>Tipps</h2>
 
             <ul>
                 <li>Fehlende schließende Tags</li>
@@ -327,26 +331,23 @@
             </ul>
             <p><a href="https://validator.w3.org/nu/#textarea" target="_blank">Hier</a> kannst du deinen HTML-Code
             überprüfen!</p>
-
-           
-
-
         </section>
 
-        <section id="ressourcen" class="material">
+        <section class="material">
             <h2>Ressourcen</h2>
             <ul>
-                <li><a href="https://handmade-web.net/spring22/assets/html.pdf">HTML Slideshow (Aidan Quinlan)</a></li>
-                <li><a href="https://www.w3schools.com/html/html_basic.asp">HTML (W3 Schools)</a></li>
-                <li><a href="https://htmlreference.io/">Liste mit HTML-Elementen</a></li>
+                <li><a target="_blank" href="https://handmade-web.net/spring22/assets/html.pdf">HTML Slideshow (Aidan Quinlan)</a></li>
+                <li><a target="_blank" href="https://www.w3schools.com/html/html_basic.asp">HTML (W3 Schools)</a></li>
+                <li><a target="_blank" href="https://htmlreference.io/">Liste mit HTML-Elementen</a></li>
+                <li><a target="_blank" href="https://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to Know HTML</a></li>
+                <li><a target="_blank" href="https://www.freecodecamp.org/">freeCodecamp</a></li>
             
             </ul>
         </section>
-
-
-
+    
 
     </main>
+    <script src="./script.js" type="text/javascript"></script>
 
 </body>
 
