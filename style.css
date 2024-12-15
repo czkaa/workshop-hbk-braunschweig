@@ -9,7 +9,6 @@
 body {
   width: 100%;
   margin: 0;
-  padding: 0;
   font-family: "Times Dot";
   color: var(--font-color);
   background-color: rgb(255, 255, 255);
@@ -18,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5rem 1rem;
+  padding: 1rem;
   line-height: 1.25;
   font-size: 1.5rem;
   overflow-x: hidden;
@@ -45,7 +44,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 h3 {
@@ -56,27 +54,37 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.15rem;
-  color: var(--font-color);
+  color: blue;
 }
 
 nav {
-  position: sticky;
-  top: 2rem;
-  z-index: 100;
-  background: white;
+  border: 2px dotted var(--font-color);
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  border-radius: 100%;
+  display: block;
+  width: 13.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  padding-left: 0;
   padding: 0 1rem;
 }
+
+
+nav ul li {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
 
 details {
   width: 100%;
@@ -85,28 +93,18 @@ details {
   margin-bottom: 3rem;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 40rem;
-}
-
 main {
   width: 100%;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 40rem;
+  max-width: 44rem;
   margin: auto;
-  overflow: hidden;
 }
 
 ul {
   text-align: left;
-  margin-top: 1rem;
   list-style-type: disc;
   padding-left: 1.5rem;
 }
@@ -125,64 +123,138 @@ li ul li {
   list-style-type: circle;
 }
 
+
 li > ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-code, pre {
-  font-size: 1.4rem;
-  padding: 0.1rem 1rem;
-  background: yellow;
-  font-family: "Erika";
-  white-space: nowrap;
-}
+
 
 section {
   width: 100%;
-  overflow: hidden;
-  margin-top: 8rem;
+  margin-top: 4rem;
   border-top: 2px dotted var(--font-color);
-  padding-top: 8rem;
+  padding-top: 4rem;
+}
+
+table {
+  width: 100%;
+  border: 1px dotted var(--font-color);
+  padding: 0;
 }
 
 tr {
   position: relative;
-}
-
-tr::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid black;
-  display: inline
+  border-spacing: 0;
+  margin-top: -2px;
 }
 
 th {
-  padding-right: 0.5rem;
+  font-weight: normal;
+  text-align: left;
 }
 
 td {
-  text-align: center;
+  font-size: 1.2rem;
+  border-right: 1px dotted var(--font-color);
+  padding: 0.25rem;
 }
 
-.hero {
-  margin-top: 0; 
-  padding-top: 0; 
-  width: 100vw; 
-  flex-shrink:0;
-  display: flex; 
-  align-items: center; 
-  background: white; 
-  justify-content: center; 
-}
+
 
 .hero__list {
   display: grid; 
-  gap: 0; 	
+  column-gap: 0.5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+form {
+  text-align: left;
+  margin: 3rem auto;
+}
 
+input {
+  max-width: 100%;
+}
+
+#other-field {
+  opacity: 0;
+}
+
+/* Show the additional input field when "Something else" checkbox is checked */
+#something_else:checked+#other-field {
+  opacity: 1;
+}
+
+label:has(> #something_else:checked)+#other-field {
+  opacity: 1;
+}
+
+.quote__source {
+  text-align: right;
+  margin-top: 0.75rem;
+}
+
+.material ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.material li {
+  border: 1px solid var(--font-color);
+  display: block;
+  aspect-ratio: 1;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: -0.5px;
+  padding: 0.5rem;
+}
+
+#toplink {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 2px dotted var(--font-color);
+  border-radius: 100%;
+  font-size: 1.2rem;
+}
+
+.task {
+  background-color: rgb(255, 164, 241);
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px dotted var(--font-color);
+  overflow-x: hidden;
+  font-size: 1.2rem;
+  margin-bottom: 5vh;
+}
+
+th,
+td {
+  padding: 0.25rem;
+  border: 2px dotted var(--font-color);
+  margin: -0.5px;
+  padding: 1vw;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
