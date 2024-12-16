@@ -230,6 +230,19 @@ label:has(> #something_else:checked)+#other-field {
   font-size: 1.2rem;
 }
 
+#homelink {
+  position: fixed;
+  top: 0;
+  left: 12.3rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 2px dotted var(--font-color);
+  border-radius: 100%;
+  font-size: 1.2rem;
+}
+
 .task {
   background-color: rgb(255, 164, 241);
   padding: 0.25rem 0.5rem;
