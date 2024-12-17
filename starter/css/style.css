@@ -96,7 +96,7 @@ img, video, audio {
     margin-bottom: 10px;
 }
 
-/* Styles all elements with class="subtitle" */
+/* Stylt alle Elemente with class="subtitle" */
 .subtitle {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -104,3 +104,30 @@ img, video, audio {
     text-align: center;
 }
 
+#audio-section {
+    display: flex;
+    align-items: start;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+}
+
+/* Stylt den Fussnoten-Container */
+.footnotes {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    width: 230px;
+    margin-left: 20px;
+}
+
+.footnotes li {
+    list-style-type: none; /* Entfernt das Listen-Styling */
+}
+
+#link-to-top {
+    font-size: 16px;
+    padding: 10px;
+}
