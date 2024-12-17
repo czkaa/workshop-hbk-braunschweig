@@ -1,5 +1,5 @@
 /* 
-* Resetting CSS 
+* Resettet CSS 
 */
 
 html,
@@ -42,13 +42,14 @@ h1, h2, h3 {
 */
 
 
-/* Content width */
+/* Inhaltsbreite */
 header, main, footer {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Verweist auf eine Schrift-Datei */
 @font-face {
     font-family: "Times Dot";
     font-style: normal;
@@ -57,17 +58,17 @@ header, main, footer {
 }
 
 body {
-    font-family: "Times Dot", serif; /* Custom font */
-    color: blueviolet; /* Custom text color */
-    background-color: azure; /* Custom background color */
+    font-family: "Times Dot", serif; /* Custom Font */
+    color: blueviolet; /* Custom Textfarbe */
+    background-color: azure; /* Custom Hintergundfarbe */
 }
 
-/* Centered headline */
+/* Zentrierte Überschrift */
 h1 {
     text-align: center;
 }
 
-/* Horizontal menu */
+/* Horizontales Menü */
 nav ul {
     display: flex;
     justify-content: center;
@@ -76,23 +77,23 @@ nav ul {
 
 /* Horizontal lines and spacing */
 main {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    border-top: 2px solid blueviolet; /* Linie nach oben */
+    border-bottom: 2px solid blueviolet; /* Linie nach unten */
+    margin-top: 50px; /* Abstand nach oben */
+    margin-bottom: 50px; /* Abstand nach unten */
+    padding-top: 50px; /* Abstand nach oben, nach innen */
+    padding-bottom: 50px; /* Abstand nach unten, nach innen */
 }
 
 section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 img, video, audio {
-    width: 100%;
+    width: 100%; /* gibt den Elementen 100% Breite des Containers, in dem sie sind */
     display: block;
-    margin-top: 20px;
+    margin-top: 20px; 
     margin-bottom: 10px;
 }
 
@@ -104,22 +105,24 @@ img, video, audio {
     text-align: center;
 }
 
+/* Ordnet die Elemente in diesem Container nebeneinander an */
 #audio-section {
     display: flex;
     align-items: start;
 }
 
+
 aside {
-    position: sticky;
-    top: 0;
+    position: sticky; /* Lässt den Container beim Scrollen am Bildschirmrand "kleben" */
+    top: 0; /* Abstand zur oberen Seitenkante, der festgelegt werden muss, damit position: sticky funktioniert */
 }
 
 /* Stylt den Fussnoten-Container */
 .footnotes {
     font-size: 20px;
     padding: 10px;
-    border: 1px solid blueviolet;
-    width: 230px;
+    border: 2px solid blueviolet;
+    width: 230px; /* Legt eine feste Breite für den Fussnoten-Contaiener an */
     margin-left: 20px;
 }
 
@@ -129,5 +132,13 @@ aside {
 
 #link-to-top {
     font-size: 16px;
-    padding: 10px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    transition: transform 2s; /* Gibt an, dass das Element h1 animiert wird, wenn die Eigenschaft "transform" verändert wird */
+}
+
+h1:hover {
+    transform: scale(2); /* ändert die Größe des Elements, wenn der Mauszeiger sich darüber bewegt */
 }
