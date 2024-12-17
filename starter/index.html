@@ -5,64 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Starterkit</title> <!-- Titel der Website (erscheint in der Tableiste) -->
+    <title>Wolken</title> <!-- Titel der Website (erscheint in der Tableiste) -->
 
     <!-- verweist auf ein CSS Styleheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
 </head>
 
-<!-- Website Inhalte <body> -->
+<!-- Sichtbare Inhalte der Website -->
 <body>
-    <!-- Überschrift/ Titel -->
-     <header>
 
-     </header>
-    <h1>Starterkit</h1>
+    <header>
+        <!-- Hauptüberschrift/ Titel -->
+        <h1>Wolken</h1>
 
-    <!-- Navigation -->
-    <nav>
-        <ul><!-- Listen Container -->
-            <li><!-- Listen Element -->
-                <a href="#intro">Intro-Section</a> <!-- Hyperlink zu der section #intro -->
-            </li>
-            <li><a href="#video-section">Video-Section</a></li>
-            <li><a href="#audio-section">Audio-Section</a></li>
-            <li><a href="#bilder-section">Bilder-Section</a></li>
 
-        </ul>
-    </nav>
+        <!-- Navigation -->
+        <nav>
+            <ul><!-- Listen Container -->
+                <li><!-- Listen Element -->
+                    <a href="#intro">Intro-Section</a> <!-- Hyperlink zu der section #intro -->
+                </li>
+                <li><a href="#video-section">Video-Section</a></li>
+                <li><a href="#audio-section">Audio-Section</a></li>
+                <li><a href="#bilder-section">Bilder-Section</a></li>
+
+            </ul>
+        </nav>
+    </header>
+   
 
     <main>
-        <!-- Unterteilung d. Inhalte in Sektionen/ Kapitel zwischen denen wir dann hin und her springen können -->
+        <!-- Unterteilung d. Inhalte in Sektionen/ Kapitel, zwischen denen wir dann hin und her springen können -->
         <section id="intro">
-            <!-- ein text paragraph -->
-            <p>HTML steht für Hypertext Markup Language</p>
-            <p>HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern interpretiert.</p>
-            <p>HTML wird zur Strukturierung elektronischer Dokumente (Texte mit Hyperlinks, Bilder, Videos...) verwendet. Für
-                die Formatierung und visuelle Darstellung benutzen wir CSS.</p>
-                LLinks
+            <!-- Ein Text-Absatz -->
+            <p>In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, frozen crystals, or other particles suspended in the atmosphere of a planetary body or similar space.[1] Water or various other chemicals may compose the droplets and crystals. On Earth, clouds are formed as a result of saturation of the air when it is cooled to its dew point, or when it gains sufficient moisture (usually in the form of water vapor) from an adjacent source to raise the dew point to the ambient temperature.</p>
         </section>
         
         <section id="video-section">
+            <!-- Zwischenüberschrift -->
+            <h2>Video</h2>
 
             <!-- Video aus den lokalen Dateien -->
-            <caption>Video-Untertitel</caption>
-        
-            <video controls href=""></video>
-            <caption>Untertitel <a href="#footnote-1">(1)</a></caption>
-        
-        
+            <video controls src="./assets/video/cloud-footage.mp4"></video>
+            <p class="subtitle">
+                <!-- Untertitel -->
+                Cloud and sun footage</a>
+            </p>
         </section>
         
         <section id="audio-section">
-            <audio controls src="./assets/audio/test.mp3"></audio>
-            <caption>Audio-Untertitel <a href="#footnote-2">(2)</a></caption>
+                    <div>
+        <!-- Zwischenüberschrift -->
+        <h2>Audio</h2>
+
+        In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, frozen crystals, or
+        other particles suspended in the atmosphere of a planetary body or similar space.[1] Water or various other chemicals
+        may compose the droplets and crystals. On Earth, clouds are formed as a result of saturation of the air when it is
+        cooled to its dew point, or when it gains sufficient moisture (usually in the form of water vapor) from an adjacent
+        source to raise the dew point to the ambient temperature.
+        <!-- Audio aus den lokalen Dateien -->
+        <audio controls src="./assets/audio/windy-night.mp3"></audio>
+
+        <!-- Untertitel mit internem Anchor-Link -->
+        <p class="subtitle">So klingt Wind<a href="#footnote-1">(2)</a></p>
+            </div>
+           
+
+            <aside>
+                <!-- Liste mit Nummerierung -->
+                <ol>
+                    <!-- Scroll-Ziel des Anchor-Links -->
+                    <li id="footnote-1">Den Sound habe ich <a target="_blank" href="https://pixabay.com/sound-effects/search/windy/">hier</a> gefunden</li>
+                </ol>
+            </aside>
         </section>
         
         <section id="bilder-section">
-            <img alt="Beispielbild" src="./assets/img/test.png"/>
-            <caption>Bild-Untertitel <a href="#footnote-3">(3)</a></caption>
+            <!-- Zwischenüberschrift -->
+            <h2>Bilder</h2>
+
+            <!-- Bild aus lokalen Dateien -->
+            <img alt="Eine Wolke vor blauem Hintergrund" src="./assets/img/cloud.jpg">
+
+            <!-- Untertitel -->
+            <p class="subtitle">Eine Cirrus-Wolke</p>
         </section>
     </main>
 

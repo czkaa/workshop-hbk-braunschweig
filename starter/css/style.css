@@ -56,12 +56,13 @@ header, main, footer {
     src: url("../assets/fonts/TimesDotRom.otf") format("opentype");
 }
 
-/* Custom Font */
 body {
-    font-family: "Times Dot";
+    font-family: "Times Dot", serif; /* Custom font */
+    color: blueviolet; /* Custom text color */
+    background-color: azure; /* Custom background color */
 }
 
-/* Centered Headline */
+/* Centered headline */
 h1 {
     text-align: center;
 }
@@ -84,7 +85,6 @@ main {
 }
 
 section {
-    border-bottom: 1px dotted black;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -96,7 +96,11 @@ img, video, audio {
     margin-bottom: 10px;
 }
 
-caption {
-    margin-top: 10px;
+/* Styles all elements with class="subtitle" */
+.subtitle {
+    margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
 }
+
