@@ -105,19 +105,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <pre>document.getElementsByClassName('')</pre>
+                            <pre>document.querySelector('.')</pre>
                         </td>
                         <td>
-                            <pre>document.getElementsByClassName('circle')</pre>
+                            <pre>document.querySelector('.circle')</pre>
                         </td>
                         <td>wählt die Elemente mit der Klasse <code>circle</code> aus</td>
                     </tr>
                     <tr>
                         <td>
-                            <pre>document.getElementsByTagName('')</pre>
+                            <pre>document.querySelector('')</pre>
                         </td>
                         <td>
-                            <pre>document.getElementsByTagName('div')</pre>
+                            <pre>document.querySelector('div')</pre>
                         </td>
                         <td>wählt die  Elemente mit <code>div</code> Tag</td>
                     </tr>
@@ -171,7 +171,7 @@
 
             <p>Wenn ich Elemente über Klasse oder Tag auswähle und deshalb eine Gruppe von Elementen erhalte, müssen diese Elemente etwas anders angesprochen werden:
             <pre><code>
-document.getElementsByClassName('paragraph').forEach((element) => {
+document.querySelector('paragraph').forEach((element) => {
     element.innerHTML = 'Hello World!'
 })
             </code></pre>
