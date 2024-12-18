@@ -17,7 +17,12 @@
 
     <nav>
         <ul>    
-            <li><a href="#was-ist-eine-webseite">Webseite?</a></li>
+            <li><a href="#was-ist-javascript">Was ist JavaScript?</a></li>
+            <li><a href="#html-manipulation">Manipulation</a></li>
+            <li><a href="#einbindung">Einbindung</a></li>
+            <li><a href="#console-logging">Console-Logging</a></li>
+            <li><a href="#event-listeners">Event-Listeners</a></li>
+            <li><a href="#resources">Ressourcen</a></li>
         </ul>
     </nav>
 
@@ -28,9 +33,133 @@
     <main>
         <h1>Javascript</h1>
 
-        <section id="was-ist-eine-webseite">
-            <h2></h2>
+        <section id="was-ist-javascript">
+            <h2>Was ist JavaScript?</h2>
+
+            <figure>
+                <img src="./assets/img/unmoebeliert.jpg" alt="">
+                <figcaption>HTML: Struktur, Gerüst</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/moebeliert.webp" alt="">
+                <figcaption>CSS: Gestaltung, Einrichtung</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/beleuchtet.png" alt="">
+                <figcaption>Javascript: Verhalten, Interaktion</figcaption>
+            </figure>
         </section>
+
+        <section id="html-manipulation">
+            <h2>HTML-Manipulation</h2>
+
+            <p>Zunächst müssen wir das Element finden und auswählen, welches wir manipuliern möchten</p>
+            <p>Es gibt verschiedenste Wege, das zu erreichen. Hier einige Beispiele:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Beispiel</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>document.getElementById('')</pre>
+                        </td>
+                        <td><pre>document.getElementById('first-paragraph')</pre></td>
+                        <td>wählt das Element mit der ID „first-paragraph“</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>document.getElementByClassName('')<br>document.getElementsByClassName('')</pre>
+                        </td>
+                        <td>
+                            <pre>document.getElementsByClassName('button')</pre>
+                        </td>
+                        <td>wählt alle Elemente mit der Klasse „button“</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>document.getElementByTagName('')<br>document.getElementsByTagName('')</pre>
+                        </td>
+                        <td>
+                            <pre>document.getElementByTagName('body')</pre>
+                        </td>
+                        <td>wählt das „body“-Element</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><code>document.getElements...</code> wählt alle Elemente mit dem entsprechenden Selektor. <code>document.getElement...</code> (Mehrzahl) (Einzahl) wählt das erste passende Element.</p>
+
+        </section>
+
+        <section id="html-manipulation">
+            <h2>HTML-Manipulation</h2>
+
+
+
+            html, style und klasse
+
+            einzelnt, mehrere
+        </section>
+
+        <section id="Einbindung">
+            <h2>Einbindung</h2>
+        </section>
+
+        <section id="console-logging">
+            <h2>Console-Logging</h2>
+        </section>
+
+        <section id="event-listeners">
+            <h2>Event-Listeners</h2>
+
+            <p>Javascript „events“ sind Ereignisse, die auf einer Webseite passieren. </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Beispiel</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>document.getElementById('')</pre>
+                        </td>
+                        <td>
+                            <pre>document.getElementById('first-paragraph')</pre>
+                        </td>
+                        <td>wählt das Element mit der ID „first-paragraph“</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>document.getElementByClassName('')<br>document.getElementsByClassName('')</pre>
+                        </td>
+                        <td>
+                            <pre>document.getElementsByClassName('button')</pre>
+                        </td>
+                        <td>wählt alle Elemente mit der Klasse „button“</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>document.getElementByTagName('')<br>document.getElementsByTagName('')</pre>
+                        </td>
+                        <td>
+                            <pre>document.getElementByTagName('body')</pre>
+                        </td>
+                        <td>wählt das „body“-Element</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
 
         <section class="material">
             <h2>Ressourcen</h2>
@@ -38,8 +167,6 @@
                 <li><a target="_blank" href="https://www.codecademy.com/learn/introduction-to-javascript">Code Academy</a></li>
                 <li><a target="_blank" href="https://www.w3schools.com/js/js_intro.asp">Javascript Intro W3 Schools</a></li>
                 <li><a target="_blank" href="https://wiki.selfhtml.org/wiki/JavaScript/Tutorials">SelfHTML Javascript Tutorial</a></li>
-        
-                
             </ul>
         </section>
     
