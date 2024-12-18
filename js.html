@@ -105,26 +105,26 @@
                     </tr>
                     <tr>
                         <td>
-                            <pre>document.getElementByClassName('')</pre>
+                            <pre>document.getElementsByClassName('')</pre>
                         </td>
                         <td>
                             <pre>document.getElementsByClassName('circle')</pre>
                         </td>
-                        <td>wählt das Elemente mit der Klasse <code>circle</code> aus</td>
+                        <td>wählt die Elemente mit der Klasse <code>circle</code> aus</td>
                     </tr>
                     <tr>
                         <td>
-                            <pre>document.getElementByTagName('')</pre>
+                            <pre>document.getElementsByTagName('')</pre>
                         </td>
                         <td>
-                            <pre>document.getElementByTagName('body')</pre>
+                            <pre>document.getElementsByTagName('div')</pre>
                         </td>
-                        <td>wählt das <code>body</code> Element</td>
+                        <td>wählt die  Elemente mit <code>div</code> Tag</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p>Wenn es mehrere Elemente gibt, auf die der Selekor zutrifft, wird das erste ausgewählt.</p>
+            <p>Weil es mehrere Elemente mit einer Klasse oder einem Tag geben kann, wählen die jeweiligen Selektoren eine Gruppe von Elementen aus.</p>
 
         </section>
 
@@ -143,7 +143,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <pre>document.getElementById('first-paragraph').innerHTML = 'Hello World'</pre>
+                            <pre>document.getElementById('first-paragraph').innerHTML = 'Hello World!'</pre>
 
                         </td>
                         <td>wählt das Element mit der ID <code>first-paragraph</code> aus und ändert den darinstehenden Text</td>
@@ -168,6 +168,14 @@
                     </tr>
                 </tbody>
             </table>
+
+            <p>Wenn ich Elemente über Klasse oder Tag auswähle und deshalb eine Gruppe von Elementen erhalte, müssen diese Elemente etwas anders angesprochen werden:
+            <pre><code>
+document.getElementsByClassName('paragraph').forEach((element) => {
+    element.innerHTML = 'Hello World!'
+})
+            </code></pre>
+            </p>
         </section>
 
         <section id="event-listeners">
