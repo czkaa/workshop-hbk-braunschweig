@@ -224,11 +224,14 @@ label:has(> #something_else:checked)+#other-field {
   right: 0;
   padding: 1rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   aspect-ratio: 1;
   border: 2px dotted var(--font-color);
   border-radius: 100%;
   font-size: 1.2rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 #homelink {
@@ -273,4 +276,24 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+#subpages {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.subpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border: 2px dotted var(--font-color);
+  border-radius: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.3rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
